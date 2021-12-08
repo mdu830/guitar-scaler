@@ -1,17 +1,10 @@
 <template>
-    <welcomePage msg="The best place to visualize your scales and advance your skills"/>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
-
-<script>
-import welcomePage from './components/welcomePage.vue'
-
-export default {
-  name: 'App',
-  components: {
-    welcomePage
-  }
-}
-</script>
 
 <style>
 #app {
@@ -20,14 +13,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-body {
-background: linear-gradient(
-  90deg,
-  rgb(54, 54, 66) 1%, 
-  rgba(7,7,28) 8%, 
-  rgba(7,7,28) 92%, 
-  rgb(54, 54, 66) 98%);
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

@@ -1,4 +1,4 @@
-# guitar-scalers
+# guitar-scaler
 
 ## Project setup
 ```
