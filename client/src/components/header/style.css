@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+
+.titleBar {
+    border: rgb(14, 14, 14) 1px solid;
+    height: 67px;
+    z-index: +2;
+    box-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(0,0,0,.25),
+    3px 3px 3px rgba(0,0,0,.25);
+  
+}
+
+.appTitle {
+    margin-top: 7px;
+    color: azure;
+    font-family: 'Syncopate';
+    text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0),
+    1px 1px 0 rgba(0,0,0,.25),
+    3px 3px 3px rgba(0,0,0,.25);
+}
