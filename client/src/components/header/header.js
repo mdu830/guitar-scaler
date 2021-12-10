@@ -16,7 +16,7 @@ function Header(props) {
                     <NavLink>
                     </NavLink>
                     <NavLink>
-                        <Link to="/welcome"><h1 className="appTitle">Guitar Scaler</h1></Link>
+                        <Link to="/welcome" style={{ textDecoration: 'none' }}><h1 className="appTitle">Guitar Scaler</h1></Link>
                     </NavLink>
 
                     <div className="m-4"></div>
