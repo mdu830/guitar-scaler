@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Welcome from './routes/welcome';
 import Scaler from './routes/guitarScaler';
 
 const rootElement = document.getElementById("root");
@@ -12,7 +11,6 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="welcome" element={<Welcome />} />
       <Route path="scaler" element={<Scaler />} />
     </Routes>  
   </BrowserRouter>, 

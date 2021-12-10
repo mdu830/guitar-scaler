@@ -5,6 +5,9 @@ export default function App() {
   return (
     <div>
       <Header />
+      <main style={{ paddingTop: "100px", color: "white" }}>
+        <h1>Welcome Page</h1>
+      </main>
     </div>
   )
 }
