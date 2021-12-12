@@ -1,0 +1,9 @@
+#scaler {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/fretboardRighty.jpg');
+    height: 300px;
+    width: auto;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
