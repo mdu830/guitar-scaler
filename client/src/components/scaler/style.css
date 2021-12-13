@@ -1,3 +1,6 @@
+#application {
+    background-color: rgba(44, 44, 44, 0.699);
+}
 #scaler {
     background-size: contain;
     background-repeat: no-repeat;
@@ -6,4 +9,18 @@
     width: auto;
     margin-top: -50px;
     margin-bottom: -50px;
+    padding-top: 63px;
+}
+
+.zindex {
+    z-index: +1;
+}
+
+.dot {
+    /* margin-top: 10px;
+    margin-left: 35px; */
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 45px;
 }
