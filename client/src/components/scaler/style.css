@@ -19,8 +19,105 @@
 .dot {
     /* margin-top: 10px;
     margin-left: 35px; */
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: red;
     border-radius: 45px;
 }
+
+#e {
+    padding-top: 11px;
+}
+#B, #G, #D, #A, #E {
+    padding-top: 9px;
+}
+
+.fret0 {
+    padding-left: 38px;
+}
+
+.fret1 {
+    padding-left: 38px;
+}
+
+.fret2 {
+   padding-left: 85px; 
+}
+
+.fret3 {
+    padding-left: 80px; 
+ }
+
+ .fret4 {
+    padding-left: 77px; 
+ }
+
+ .fret5 {
+    padding-left: 73px; 
+ }
+
+ .fret6 {
+    padding-left: 67px; 
+ }
+
+ .fret7 {
+    padding-left: 60px; 
+ }
+
+ .fret8 {
+    padding-left: 57px; 
+ }
+
+ .fret9 {
+    padding-left: 55px; 
+ }
+
+ .fret10 {
+    padding-left: 50px; 
+ }
+
+ .fret11 {
+    padding-left: 47px; 
+ }
+
+ .fret12 {
+    padding-left: 42px; 
+ }
+
+ .fret13 {
+    padding-left: 38px; 
+ }
+
+ .fret14 {
+    padding-left: 33px; 
+ }
+
+ .fret15 {
+    padding-left: 27px; 
+ }
+
+ .fret16 {
+    padding-left: 25px; 
+ }
+
+ .fret17 {
+    padding-left: 23px; 
+ }
+
+ .fret18 {
+    padding-left: 22px; 
+ }
+
+ .fret19 {
+    padding-left: 19px; 
+ }
+
+ .fret20 {
+    padding-left: 18px; 
+ }
+
+ .fret21 {
+    padding-left: 16px; 
+ }
+
+

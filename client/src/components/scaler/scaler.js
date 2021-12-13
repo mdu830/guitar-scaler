@@ -9,11 +9,11 @@ export default function GuitarScaler() {
                 <h2>settings</h2>
             </Navbar> */}
             <div id='scaler'>
-                <ScalerGrid />
+                <ScalerGrid id="e"/>
             </div>
-            <Navbar className="titleBar" color="dark" dark>
+            {/* <Navbar className="titleBar" color="dark" dark>
                 <h2>settings</h2>
-            </Navbar>
+            </Navbar> */}
 
         </div>
     );
