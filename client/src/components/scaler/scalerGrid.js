@@ -1,5 +1,5 @@
 import './style.css'
-import RedDot from './redDot'
+import Dot from './Dot'
 import Grid from '@mui/material/Grid'
 
 export default function ScalerGrid() {
@@ -9,112 +9,112 @@ export default function ScalerGrid() {
             <Grid container id="e">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>
@@ -123,112 +123,112 @@ export default function ScalerGrid() {
             <Grid container id="B">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>
@@ -237,112 +237,112 @@ export default function ScalerGrid() {
             <Grid container id="G">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>
@@ -351,112 +351,112 @@ export default function ScalerGrid() {
             <Grid container id="D">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>
@@ -465,112 +465,112 @@ export default function ScalerGrid() {
             <Grid container id="A">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>
@@ -579,112 +579,112 @@ export default function ScalerGrid() {
             <Grid container id="E">
                 <Grid>
                     <div className='fret0'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret1'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret2'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret3'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret4'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret5'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret6'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret7'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret8'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret9'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret10'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret11'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret12'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret13'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret14'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret15'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret16'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret17'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret18'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret19'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret20'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
                 <Grid>
                     <div className='fret21'>
-                        <RedDot />
+                        <Dot />
                     </div>
                 </Grid>
             </Grid>

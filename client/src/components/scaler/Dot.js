@@ -1,6 +1,6 @@
 import './style.css'
 
-export default function RedDot() {
+export default function Dot() {
     return (
         <div class="dot">
 
