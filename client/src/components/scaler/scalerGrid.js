@@ -10,6 +10,7 @@ import E from './grids/E'
 export default function ScalerGrid() {
     return (
         <div>
+            {/* each grid needs a for loop to reduce repetitive lines of code */}
             <HighE />
             <B />
             <G />
