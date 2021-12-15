@@ -58,42 +58,6 @@ export default function B() {
                 <div className='fret12'>
                     <Dot />
                 </div>
-
-                <div className='fret13'>
-                    <Dot />
-                </div>
-
-                <div className='fret14'>
-                    <Dot />
-                </div>
-
-                <div className='fret15'>
-                    <Dot />
-                </div>
-
-                <div className='fret16'>
-                    <Dot />
-                </div>
-
-                <div className='fret17'>
-                    <Dot />
-                </div>
-
-                <div className='fret18'>
-                    <Dot />
-                </div>
-
-                <div className='fret19'>
-                    <Dot />
-                </div>
-
-                <div className='fret20'>
-                    <Dot />
-                </div>
-
-                <div className='fret21'>
-                    <Dot />
-                </div>
             </Grid>
         </div>
     )

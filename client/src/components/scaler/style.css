@@ -2,7 +2,8 @@
     background-color: rgba(44, 44, 44, 0.699);
 }
 #scaler {
-    background-size: contain;
+    /* background-attachment: fixed; */
+    background-size: 100% 89%;
     background-repeat: no-repeat;
     background-image: url('../../assets/images/fretboardRighty.jpg');
     height: 300px;
@@ -21,103 +22,95 @@
     margin-left: 35px; */
     width: 15px;
     height: 15px;
-    background-color: rgba(255, 0, 0, 0.699);
+    background-color: rgba(255, 0, 0, 0.76);
     border-radius: 45px;
+    margin: auto;
 }
 
 #highE {
     padding-top: 11px;
 }
-#B, #G, #D, #A, #E {
+#B {
+    padding-top: 6px;
+}
+
+#G, #A{
+    padding-top: 7px;
+}
+
+#D {
     padding-top: 9px;
 }
 
+#E {
+    padding-top: 5px;
+}
+
+#highE, #B, #G, #D, #A, #E {
+    margin-left: 1%;
+}
+
+.fret0, .fret1, .fret2, 
+.fret3, .fret4, .fret5, 
+.fret6, .fret7, .fret8, 
+.fret9, .fret10, .fret11, 
+.fret12 {
+    /* background-color: rgba(255, 0, 0, 0.507); */
+    border: black 1px solid;
+}
+
+
 .fret0 {
-    padding-left: 38px;
+    margin-left: 1.6%;
+    padding-left: 0%;
 }
 
 .fret1 {
-    padding-left: 38px;
+    width: 7.102%;
 }
 
 .fret2 {
-   padding-left: 85px; 
+    width: 7%; 
 }
 
 .fret3 {
-    padding-left: 80px; 
- }
+    width: 6.837%; 
+}
 
- .fret4 {
-    padding-left: 77px; 
- }
+.fret4 {
+    width: 6.6%; 
+}
 
- .fret5 {
-    padding-left: 73px; 
- }
+.fret5 {
+    width: 6.25%; 
+}
 
  .fret6 {
-    padding-left: 67px; 
+    width: 5.74%; 
+}
+
+.fret7 {
+    width: 5.35%; 
+}
+
+.fret8 {
+    width: 5.275%; 
+}
+
+.fret9 {
+    width: 4.95%; 
  }
 
- .fret7 {
-    padding-left: 60px; 
+.fret10 {
+    width: 4.7%; 
  }
 
- .fret8 {
-    padding-left: 57px; 
+.fret11 {
+    width: 4.26%; 
  }
 
- .fret9 {
-    padding-left: 55px; 
- }
-
- .fret10 {
-    padding-left: 50px; 
- }
-
- .fret11 {
-    padding-left: 47px; 
- }
-
- .fret12 {
-    padding-left: 42px; 
- }
-
- .fret13 {
-    padding-left: 38px; 
- }
-
- .fret14 {
-    padding-left: 33px; 
- }
-
- .fret15 {
-    padding-left: 27px; 
- }
-
- .fret16 {
-    padding-left: 25px; 
- }
-
- .fret17 {
-    padding-left: 23px; 
- }
-
- .fret18 {
-    padding-left: 22px; 
- }
-
- .fret19 {
-    padding-left: 19px; 
- }
-
- .fret20 {
-    padding-left: 18px; 
- }
-
- .fret21 {
-    padding-left: 16px; 
+.fret12 {
+    width: 4.15%; 
  }
 
 
