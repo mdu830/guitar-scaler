@@ -1,62 +1,90 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
-import Dot from '../Dot'
 
-export default function E() {
+export default function E(data) {
+
+    const fingerPlacement = data.data
+
     return (
         <div>
             {/* E String */}
             <Grid container id="E">
-                <div className='fret0'>
-                    <Dot />
+            <div className='fret0'>
+                    <div className={fingerPlacement.fret0 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret1'>
-                    <Dot />
+                    <div className={fingerPlacement.fret1 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
-                
+
                 <div className='fret2'>
-                    <Dot />
+                    <div className={fingerPlacement.fret2 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret3'>
-                    <Dot />
+                    <div className={fingerPlacement.fret3 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret4'>
-                    <Dot />
+                    <div className={fingerPlacement.fret4 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret5'>
-                    <Dot />
+                    <div className={fingerPlacement.fret5 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret6'>
-                    <Dot />
+                    <div className={fingerPlacement.fret6 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret7'>
-                    <Dot />
+                    <div className={fingerPlacement.fret7 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret8'>
-                    <Dot />
+                    <div className={fingerPlacement.fret8 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret9'>
-                    <Dot />
+                    <div className={fingerPlacement.fret9 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret10'>
-                    <Dot />
+                    <div className={fingerPlacement.fret10 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret11'>
-                    <Dot />
+                    <div className={fingerPlacement.fret11 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
 
                 <div className='fret12'>
-                    <Dot />
+                    <div className={fingerPlacement.fret12 ? 'redDot' : 'dot'}>
+
+                    </div>
                 </div>
             </Grid>
         </div>

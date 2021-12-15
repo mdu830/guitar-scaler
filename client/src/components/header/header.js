@@ -15,9 +15,7 @@ function Header(props) {
                 <Navbar className="titleBar" color="dark" dark expand="md" fixed="top">
                     <NavLink>
                     </NavLink>
-                    <NavLink>
-                        <Link to="/" style={{ textDecoration: 'none' }}><h1 className="appTitle">Guitar Scaler</h1></Link>
-                    </NavLink>
+                    <Link to="/" style={{ textDecoration: 'none' }}><h1 className="appTitle">Guitar Scaler</h1></Link>
 
                     <div className="m-4"></div>
                 </Navbar>
