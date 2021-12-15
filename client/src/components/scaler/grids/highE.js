@@ -2,7 +2,11 @@ import '../style.css'
 import Grid from '@mui/material/Grid'
 import Dot from '../Dot'
 
-export default function highE() {
+export default function highE(data) {
+
+    const fingerPlacement = data.data
+    console.log(fingerPlacement)
+    
     return (
         <div>
             {/* High e String */}

@@ -48,6 +48,7 @@
 
 #highE, #B, #G, #D, #A, #E {
     margin-left: 1%;
+    padding: auto
 }
 
 .fret0, .fret1, .fret2, 
@@ -56,7 +57,7 @@
 .fret9, .fret10, .fret11, 
 .fret12 {
     /* background-color: rgba(255, 0, 0, 0.507); */
-    border: black 1px solid;
+    border: rgba(0, 0, 0, 0) 1px solid;
 }
 
 
