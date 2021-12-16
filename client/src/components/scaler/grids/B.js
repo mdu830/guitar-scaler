@@ -9,80 +9,80 @@ export default function B(data) {
         <div>
             {/* B String */}
             <Grid container id="B">
-            <div className='fret0'>
-                    <div className={fingerPlacement.fret0 ? 'redDot' : 'dot'}>
+                <div className='fret0'>
+                    <div id={fingerPlacement.fret0.id} className={fingerPlacement.fret0.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret1'>
-                    <div className={fingerPlacement.fret1 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret1.id} className={fingerPlacement.fret1.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret2'>
-                    <div className={fingerPlacement.fret2 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret2.id} className={fingerPlacement.fret2.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret3'>
-                    <div className={fingerPlacement.fret3 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret3.id} className={fingerPlacement.fret3.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret4'>
-                    <div className={fingerPlacement.fret4 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret4.id} className={fingerPlacement.fret4.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret5'>
-                    <div className={fingerPlacement.fret5 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret5.id} className={fingerPlacement.fret5.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret6'>
-                    <div className={fingerPlacement.fret6 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret6.id} className={fingerPlacement.fret6.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret7'>
-                    <div className={fingerPlacement.fret7 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret7.id} className={fingerPlacement.fret7.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret8'>
-                    <div className={fingerPlacement.fret8 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret8.id} className={fingerPlacement.fret8.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret9'>
-                    <div className={fingerPlacement.fret9 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret9.id} className={fingerPlacement.fret9.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret10'>
-                    <div className={fingerPlacement.fret10 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret10.id} className={fingerPlacement.fret10.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret11'>
-                    <div className={fingerPlacement.fret11 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret11.id} className={fingerPlacement.fret11.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
 
                 <div className='fret12'>
-                    <div className={fingerPlacement.fret12 ? 'redDot' : 'dot'}>
+                    <div id={fingerPlacement.fret12.id} className={fingerPlacement.fret12.isDot ? 'redDot' : 'dot'}>
 
                     </div>
                 </div>
