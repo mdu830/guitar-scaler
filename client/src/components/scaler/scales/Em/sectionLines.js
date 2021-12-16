@@ -1,6 +1,6 @@
 import Xarrow from "react-xarrows";
 
-export default function EmLines() {
+export default function EmScaleSections() {
     return (
         <div>
             {/* section 1 */}
@@ -60,6 +60,8 @@ export default function EmLines() {
                 showHead={false}
                 strokeWidth={3}
             />
+
+
             {/* Section 2 */}
             <Xarrow
                 start={'3e'}
@@ -103,6 +105,8 @@ export default function EmLines() {
                 showHead={false}
                 strokeWidth={3}
             />
+
+
             {/* Section 3 */}
             <Xarrow
                 start={'5e'}
@@ -139,6 +143,8 @@ export default function EmLines() {
                 showHead={false}
                 strokeWidth={3}
             />
+
+
             {/* Section 4 */}
             <Xarrow
                 start={'7e'}
@@ -189,6 +195,8 @@ export default function EmLines() {
                 showHead={false}
                 strokeWidth={3}
             />
+
+
             {/* Section 5 */}
             <Xarrow
                 start={'10e'}
