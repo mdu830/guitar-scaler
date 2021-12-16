@@ -3,7 +3,7 @@ const eMinorKey = {
     highE: {
         fret0: {
             isDot: true,
-            id: 'red0e-start'
+            id: '0e'
         },
         fret1: {
             isDot: false,
@@ -15,7 +15,7 @@ const eMinorKey = {
         },
         fret3: {
             isDot: true,
-            id: 'red0e-end'
+            id: '3e'
         },
         fret4: {
             isDot: false,
@@ -23,7 +23,7 @@ const eMinorKey = {
         },
         fret5: {
             isDot: true,
-            id: ''
+            id: '5e'
         },
         fret6: {
             isDot: false,
@@ -31,7 +31,7 @@ const eMinorKey = {
         },
         fret7: {
             isDot: true,
-            id: ''
+            id: '7e'
         },
         fret8: {
             isDot: false,
@@ -43,7 +43,7 @@ const eMinorKey = {
         },
         fret10: {
             isDot: true,
-            id: ''
+            id: '10e'
         },
         fret11: {
             isDot: false,
@@ -51,14 +51,14 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12e'
         }
     },
 
     B: {
         fret0: {
             isDot: true,
-            id: ''
+            id: '0B'
         },
         fret1: {
             isDot: false,
@@ -70,7 +70,7 @@ const eMinorKey = {
         },
         fret3: {
             isDot: true,
-            id: ''
+            id: '3B'
         },
         fret4: {
             isDot: false,
@@ -78,7 +78,7 @@ const eMinorKey = {
         },
         fret5: {
             isDot: true,
-            id: ''
+            id: '5B'
         },
         fret6: {
             isDot: false,
@@ -90,7 +90,7 @@ const eMinorKey = {
         },
         fret8: {
             isDot: true,
-            id: ''
+            id: '8B'
         },
         fret9: {
             isDot: false,
@@ -98,7 +98,7 @@ const eMinorKey = {
         },
         fret10: {
             isDot: true,
-            id: ''
+            id: '10B'
         },
         fret11: {
             isDot: false,
@@ -106,14 +106,14 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12B'
         }
     },
 
     G: {
         fret0: {
             isDot: true,
-            id: ''
+            id: '0G'
         },
         fret1: {
             isDot: false,
@@ -121,7 +121,7 @@ const eMinorKey = {
         },
         fret2: {
             isDot: true,
-            id: ''
+            id: '2G'
         },
         fret3: {
             isDot: false,
@@ -129,7 +129,7 @@ const eMinorKey = {
         },
         fret4: {
             isDot: true,
-            id: ''
+            id: '4G'
         },
         fret5: {
             isDot: false,
@@ -141,7 +141,7 @@ const eMinorKey = {
         },
         fret7: {
             isDot: true,
-            id: ''
+            id: '7G'
         },
         fret8: {
             isDot: false,
@@ -149,7 +149,7 @@ const eMinorKey = {
         },
         fret9: {
             isDot: true,
-            id: ''
+            id: '9G'
         },
         fret10: {
             isDot: false,
@@ -161,14 +161,14 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12G'
         }
     },
 
     D: {
         fret0: {
             isDot: true,
-            id: ''
+            id: '0D'
         },
         fret1: {
             isDot: false,
@@ -176,7 +176,7 @@ const eMinorKey = {
         },
         fret2: {
             isDot: true,
-            id: ''
+            id: '2D'
         },
         fret3: {
             isDot: false,
@@ -188,7 +188,7 @@ const eMinorKey = {
         },
         fret5: {
             isDot: true,
-            id: ''
+            id: '5D'
         },
         fret6: {
             isDot: false,
@@ -196,7 +196,7 @@ const eMinorKey = {
         },
         fret7: {
             isDot: true,
-            id: ''
+            id: '7D'
         },
         fret8: {
             isDot: false,
@@ -204,7 +204,7 @@ const eMinorKey = {
         },
         fret9: {
             isDot: true,
-            id: ''
+            id: '9D'
         },
         fret10: {
             isDot: false,
@@ -216,14 +216,14 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12D'
         }
     },
 
     A: {
         fret0: {
             isDot: true,
-            id: ''
+            id: '0A'
         },
         fret1: {
             isDot: false,
@@ -231,7 +231,7 @@ const eMinorKey = {
         },
         fret2: {
             isDot: true,
-            id: ''
+            id: '2A'
         },
         fret3: {
             isDot: false,
@@ -243,7 +243,7 @@ const eMinorKey = {
         },
         fret5: {
             isDot: true,
-            id: ''
+            id: '5A'
         },
         fret6: {
             isDot: false,
@@ -251,7 +251,7 @@ const eMinorKey = {
         },
         fret7: {
             isDot: true,
-            id: ''
+            id: '7A'
         },
         fret8: {
             isDot: false,
@@ -263,7 +263,7 @@ const eMinorKey = {
         },
         fret10: {
             isDot: true,
-            id: ''
+            id: '10A'
         },
         fret11: {
             isDot: false,
@@ -271,14 +271,14 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12A'
         }
     },
     
     E: {
         fret0: {
             isDot: true,
-            id: ''
+            id: '0E'
         },
         fret1: {
             isDot: false,
@@ -290,7 +290,7 @@ const eMinorKey = {
         },
         fret3: {
             isDot: true,
-            id: ''
+            id: '3E'
         },
         fret4: {
             isDot: false,
@@ -298,7 +298,7 @@ const eMinorKey = {
         },
         fret5: {
             isDot: true,
-            id: ''
+            id: '5E'
         },
         fret6: {
             isDot: false,
@@ -306,7 +306,7 @@ const eMinorKey = {
         },
         fret7: {
             isDot: true,
-            id: ''
+            id: '7E'
         },
         fret8: {
             isDot: false,
@@ -318,7 +318,7 @@ const eMinorKey = {
         },
         fret10: {
             isDot: true,
-            id: ''
+            id: '10E'
         },
         fret11: {
             isDot: false,
@@ -326,7 +326,7 @@ const eMinorKey = {
         },
         fret12: {
             isDot: true,
-            id: ''
+            id: '12E'
         }
     }
 }

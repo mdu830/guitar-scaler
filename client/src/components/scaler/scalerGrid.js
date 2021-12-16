@@ -1,5 +1,5 @@
 import './style.css'
-import Xarrow from "react-xarrows";
+// import Xarrow from "react-xarrows";
 // grids
 import HighE from './grids/highE'
 import B from './grids/B'
@@ -8,26 +8,21 @@ import D from './grids/D'
 import A from './grids/A'
 import E from './grids/E'
 // keys
-import eMinorKey from './scales/keyMinorE'
+import eMinorKey from './scales/Em/EmScale'
+import EmLines from './scales/Em/lines'
 
 export default function ScalerGrid() {
     const defaultKey = eMinorKey;
     // console.log(defaultKey.E)
     return (
         <div>
-            <HighE data={defaultKey.highE}/>
-            <B data={defaultKey.B}/>
-            <G data={defaultKey.G}/>
-            <D data={defaultKey.D}/>
-            <A data={defaultKey.A}/>
-            <E data={defaultKey.E}/>
-            <Xarrow 
-                start={'red0e-start'}
-                end='red0e-end'
-                color='red'
-                showHead={false}
-                strokeWidth={3}
-            />
+            <HighE data={defaultKey.highE} />
+            <B data={defaultKey.B} />
+            <G data={defaultKey.G} />
+            <D data={defaultKey.D} />
+            <A data={defaultKey.A} />
+            <E data={defaultKey.E} />
+            <EmLines />
         </div>
     )
 }
