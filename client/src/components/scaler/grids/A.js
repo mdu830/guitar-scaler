@@ -1,15 +1,17 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
+import gridData from './data/gridData'
 
-export default function A(data) {
 
-    const fingerPlacement = data.data
+export default function A() {
+
+    const data = gridData.A
 
     return (
         <div>
             {/* High e String */}
             <Grid container id="A">
-                {fingerPlacement.map((fret, index) => (
+                {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
                         <div id={fret.id} className={fret.isDot ? 'redDot' : 'dot'}>
                 

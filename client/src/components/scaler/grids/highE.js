@@ -1,20 +1,18 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
-// import React, { useRef } from "react";
+import gridData from './data/gridData'
 
 
 
-export default function HighE(data) {
-
-    const fingerPlacement = data.data
-
-    console.log(fingerPlacement)
+export default function HighE() {
+    
+    const data = gridData.highE
 
     return (
         <div>
             {/* High e String */}
-            <Grid container id="highE">
-                {fingerPlacement.map((fret, index) => (
+            <Grid container id="highE" >
+                {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
                         <div id={fret.id} className={fret.isDot ? 'redDot' : 'dot'}>
                 
