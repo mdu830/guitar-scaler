@@ -1,4 +1,4 @@
-const eMinorKey = {
+const gridData = {
 
     highE: [
         { isDot: true, id: '0e', className: 'fret0' },
@@ -97,4 +97,4 @@ const eMinorKey = {
     ]
 }
 
-export default eMinorKey;
+export default gridData;

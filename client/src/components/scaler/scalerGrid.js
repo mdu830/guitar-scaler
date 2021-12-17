@@ -8,19 +8,17 @@ import D from './grids/D'
 import A from './grids/A'
 import E from './grids/E'
 // keys
-import eMinorKey from './scales/Em/EmScale'
+import gridData from './scales/Em/gridData'
 // import EmScaleSections from './scales/Em/sectionLines'
 export default function ScalerGrid() {
-    const defaultKey = eMinorKey;
-    // console.log(defaultKey.E)
     return (
         <div>
-            <HighE data={defaultKey.highE} />
-            <B data={defaultKey.B} />
-            <G data={defaultKey.G} />
-            <D data={defaultKey.D} />
-            <A data={defaultKey.A} />
-            <E data={defaultKey.E} />
+            <HighE data={gridData.highE} />
+            <B data={gridData.B} />
+            <G data={gridData.G} />
+            <D data={gridData.D} />
+            <A data={gridData.A} />
+            <E data={gridData.E} />
             {/* <EmScaleSections /> */}
         </div>
     )
