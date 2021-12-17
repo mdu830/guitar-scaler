@@ -64,115 +64,37 @@ const eMinorKey = {
         { isDot: true, id: '12D', className: 'fret12' }
     ],
 
-    A: {
-        fret0: {
-            isDot: true,
-            id: '0A'
-        },
-        fret1: {
-            isDot: false,
-            id: ''
-        },
-        fret2: {
-            isDot: true,
-            id: '2A'
-        },
-        fret3: {
-            isDot: false,
-            id: ''
-        },
-        fret4: {
-            isDot: false,
-            id: ''
-        },
-        fret5: {
-            isDot: true,
-            id: '5A'
-        },
-        fret6: {
-            isDot: false,
-            id: ''
-        },
-        fret7: {
-            isDot: true,
-            id: '7A'
-        },
-        fret8: {
-            isDot: false,
-            id: ''
-        },
-        fret9: {
-            isDot: false,
-            id: ''
-        },
-        fret10: {
-            isDot: true,
-            id: '10A'
-        },
-        fret11: {
-            isDot: false,
-            id: ''
-        },
-        fret12: {
-            isDot: true,
-            id: '12A'
-        }
-    },
+    A: [
+        { isDot: true, id: '0A', className: 'fret0' },
+        { isDot: false, id: '1A', className: 'fret1' },
+        { isDot: true, id: '2A', className: 'fret2' },
+        { isDot: false, id: '3A', className: 'fret3' },
+        { isDot: false, id: '4A', className: 'fret4' },
+        { isDot: true, id: '5A', className: 'fret5' },
+        { isDot: false, id: '6A', className: 'fret6' },
+        { isDot: true, id: '7A', className: 'fret7' },
+        { isDot: false, id: '8A', className: 'fret8' },
+        { isDot: false, id: '9A', className: 'fret9' },
+        { isDot: true, id: '10A', className: 'fret10' },
+        { isDot: false, id: '11A', className: 'fret11' },
+        { isDot: true, id: '12A', className: 'fret12' }
+    ],
 
-    E: {
-        fret0: {
-            isDot: true,
-            id: '0E'
-        },
-        fret1: {
-            isDot: false,
-            id: ''
-        },
-        fret2: {
-            isDot: false,
-            id: ''
-        },
-        fret3: {
-            isDot: true,
-            id: '3E'
-        },
-        fret4: {
-            isDot: false,
-            id: ''
-        },
-        fret5: {
-            isDot: true,
-            id: '5E'
-        },
-        fret6: {
-            isDot: false,
-            id: ''
-        },
-        fret7: {
-            isDot: true,
-            id: '7E'
-        },
-        fret8: {
-            isDot: false,
-            id: ''
-        },
-        fret9: {
-            isDot: false,
-            id: ''
-        },
-        fret10: {
-            isDot: true,
-            id: '10E'
-        },
-        fret11: {
-            isDot: false,
-            id: ''
-        },
-        fret12: {
-            isDot: true,
-            id: '12E'
-        }
-    }
+    E: [
+        { isDot: true, id: '0E', className: 'fret0' },
+        { isDot: false, id: '1E', className: 'fret1' },
+        { isDot: false, id: '2E', className: 'fret2' },
+        { isDot: true, id: '3E', className: 'fret3' },
+        { isDot: false, id: '4E', className: 'fret4' },
+        { isDot: true, id: '5E', className: 'fret5' },
+        { isDot: false, id: '6E', className: 'fret6' },
+        { isDot: true, id: '7E', className: 'fret7' },
+        { isDot: false, id: '8E', className: 'fret8' },
+        { isDot: false, id: '9E', className: 'fret9' },
+        { isDot: true, id: '10E', className: 'fret10' },
+        { isDot: false, id: '11E', className: 'fret11' },
+        { isDot: true, id: '12E', className: 'fret12' }
+    ]
 }
 
 export default eMinorKey;

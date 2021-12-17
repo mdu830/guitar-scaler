@@ -19,8 +19,8 @@ export default function ScalerGrid() {
             <B data={defaultKey.B} />
             <G data={defaultKey.G} />
             <D data={defaultKey.D} />
-            {/* <A data={defaultKey.A} /> */}
-            {/* <E data={defaultKey.E} /> */}
+            <A data={defaultKey.A} />
+            <E data={defaultKey.E} />
             {/* <EmScaleSections /> */}
         </div>
     )
