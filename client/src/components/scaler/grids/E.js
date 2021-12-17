@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 export default function E(data) {
 
     const fingerPlacement = data.data
-
+    // console.log(fingerPlacement)
     return (
         <div>
             {/* E String */}
