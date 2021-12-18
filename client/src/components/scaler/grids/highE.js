@@ -4,10 +4,12 @@ import gridData from './data/gridData'
 
 
 
-export default function HighE() {
+export default function HighE(scaleData) {
     
     const data = gridData.highE
 
+    const scale = scaleData.data.highE;
+    // console.log(scale)
     return (
         <div>
             {/* High e String */}
