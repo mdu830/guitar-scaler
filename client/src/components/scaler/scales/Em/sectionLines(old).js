@@ -1,6 +1,6 @@
 import Xarrow from "react-xarrows";
 
-export default function EmScaleSections() {
+export default function EmSections() {
     return (
         <div>
             {/* section 1 */}

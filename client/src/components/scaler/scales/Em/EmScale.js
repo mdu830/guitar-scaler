@@ -94,6 +94,27 @@ const gridData = {
         { isDot: true },
         { isDot: false },
         { isDot: true }
+    ],
+
+    sectionLines: [
+        // section 1
+        { section1: [
+            { start: '0e' , end: '3e' },
+            { start: '3e' , end: '3B' },
+            { start: '3B' , end: '2G' },
+            { start: '2G' , end: '2D' },
+            { start: '2D' , end: '2A' },
+            { start: '2A' , end: '3E' },
+            { start: '3E' , end: '0E' },
+            { start: '0E' , end: '0e' },
+        ]},
+        { section2: [
+            { start: '3e' , end: '3B' },
+            { start: '3B' , end: '2G' },
+            { start: '2G' , end: '2D' },
+            { start: '2D' , end: '2A' },
+            { start: '2A' , end: '3E' }
+        ]}
     ]
 }
 
