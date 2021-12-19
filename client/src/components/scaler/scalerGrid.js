@@ -14,12 +14,12 @@ export default function ScalerGrid() {
     // console.log(Em)
     return (
         <div>
-            <HighE data={Em}/>
-            <B />
-            <G />
-            <D />
-            <A />
-            <E />
+            <HighE data={Em.highE}/>
+            <B data={Em.B}/>
+            <G data={Em.G}/>
+            <D data={Em.D}/>
+            <A data={Em.A}/>
+            <E data={Em.E}/>
             {/* <EmScaleSections /> */}
         </div>
     )

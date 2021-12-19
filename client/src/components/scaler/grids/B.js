@@ -3,9 +3,12 @@ import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
 
 
-export default function B() {
+export default function B(scaleData) {
 
     const data = gridData.B
+
+    const scale = scaleData.data;
+
 
     return (
         <div>
@@ -13,7 +16,7 @@ export default function B() {
             <Grid container id="B">
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
-                        <div id={fret.id} className={fret.isDot ? 'redDot' : 'dot'}>
+                        <div id={fret.id} className={scale[index].isDot ? 'redDot' : 'dot'}>
                 
                         </div>
                     </div>
