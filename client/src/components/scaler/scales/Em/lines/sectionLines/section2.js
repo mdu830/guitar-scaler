@@ -5,7 +5,7 @@ import EmScale from '../../EmScale';
 
 export default function Section2() {
 
-    const sectionLines = EmScale.sectionLines[1].section2;
+    const sectionLines = EmScale.sectionLines.section2;
 
     console.log(sectionLines)
 
