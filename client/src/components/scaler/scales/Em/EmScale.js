@@ -1,4 +1,4 @@
-const gridData = {
+const scaleData = {
 
     highE: [
         { isDot: true },
@@ -134,4 +134,4 @@ const gridData = {
     }
 }
 
-export default gridData;
+export default scaleData;
