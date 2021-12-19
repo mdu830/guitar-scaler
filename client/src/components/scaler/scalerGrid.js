@@ -10,6 +10,8 @@ import E from './grids/E'
 import Em from './scales/Em/EmScale'
 import Section1 from './scales/Em/lines/sectionLines/section1'
 import Section2 from './scales/Em/lines/sectionLines/section2'
+import Section3 from './scales/Em/lines/sectionLines/section3'
+
 
 export default function ScalerGrid() {
     // console.log(Em)
@@ -23,6 +25,7 @@ export default function ScalerGrid() {
             <E data={Em.E}/>
             <Section1 />
             <Section2 />
+            <Section3 />
         </div>
     )
 }
