@@ -1,13 +1,12 @@
 import Xarrow from "react-xarrows";
-import EmScale from '../../EmScale';
 
 
 
-export default function Section2() {
+export default function Section1(data) {
 
-    const sectionLines = EmScale.sectionLines.section2;
+    const sectionLines = data.data;
 
-    console.log(sectionLines)
+    // console.log(sectionLines)
 
     return (
         <div>

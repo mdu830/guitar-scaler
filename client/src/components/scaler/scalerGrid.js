@@ -6,15 +6,14 @@ import G from './grids/G'
 import D from './grids/D'
 import A from './grids/A'
 import E from './grids/E'
-// keys
+// scales
 import scaleData from './scales/Em/EmScale'
-import Section1 from './scales/Em/lines/sectionLines/section1'
-import Section2 from './scales/Em/lines/sectionLines/section2'
-import Section3 from './scales/Em/lines/sectionLines/section3'
+import Section from './scales/Em/lines/sectionLines/section'
+
 
 
 export default function ScalerGrid() {
-    // console.log(Em)
+    // console.log(scaleData.sectionLines.section1)
     return (
         <div>
             <HighE data={scaleData.highE}/>
@@ -23,9 +22,10 @@ export default function ScalerGrid() {
             <D data={scaleData.D}/>
             <A data={scaleData.A}/>
             <E data={scaleData.E}/>
-            <Section1 />
-            <Section2 />
-            <Section3 />
+            <Section data={scaleData.sectionLines.section1} />
+            <Section data={scaleData.sectionLines.section2} />
+            <Section data={scaleData.sectionLines.section3} />
+
         </div>
     )
 }
