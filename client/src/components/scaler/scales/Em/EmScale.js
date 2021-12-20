@@ -130,6 +130,21 @@ const scaleData = {
             { start: '8B' , end: '7G' },
             { start: '7G' , end: '7E' },
             { start: '7E' , end: '5E' }
+        ],        
+        section4: [
+            { start: '7e' , end: '8B' },
+            { start: '8B' , end: '7G' },
+            { start: '7G' , end: '7E' },
+            { start: '7e' , end: '10e' },
+            { start: '10e' , end: '10B' },
+            { start: '10B' , end: '9G' },
+            { start: '9G' , end: '9D' },
+            { start: '9D' , end: '10A' },
+            { start: '10A' , end: '10E' },
+            { start: '10E' , end: '7E' }
+        ],
+        section5: [
+
         ]
     }
 }

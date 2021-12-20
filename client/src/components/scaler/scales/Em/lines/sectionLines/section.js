@@ -1,7 +1,5 @@
 import Xarrow from "react-xarrows";
 
-
-
 export default function Section1(data) {
 
     const sectionLines = data.data;

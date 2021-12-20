@@ -22,9 +22,11 @@ export default function ScalerGrid() {
             <D data={scaleData.D}/>
             <A data={scaleData.A}/>
             <E data={scaleData.E}/>
-            <Section data={scaleData.sectionLines.section1} />
+            {/* <Section data={scaleData.sectionLines.section1} />
             <Section data={scaleData.sectionLines.section2} />
-            <Section data={scaleData.sectionLines.section3} />
+            <Section data={scaleData.sectionLines.section3} /> */}
+            <Section data={scaleData.sectionLines.section4} />
+
 
         </div>
     )
