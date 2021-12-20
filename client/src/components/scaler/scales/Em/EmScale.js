@@ -144,7 +144,18 @@ const scaleData = {
             { start: '10E' , end: '7E' }
         ],
         section5: [
-
+            { start: '10e' , end: '10B' },
+            { start: '10B' , end: '9G' },
+            { start: '9G' , end: '9D' },
+            { start: '9D' , end: '10A' },
+            { start: '10A' , end: '10E' },
+            { start: '10e' , end: '12e' },
+            { start: '12e' , end: '12B' },
+            { start: '12B' , end: '12G' },
+            { start: '12G' , end: '12D' },
+            { start: '12D' , end: '12A' },
+            { start: '12A' , end: '12E' },
+            { start: '12E' , end: '10E' }
         ]
     }
 }
