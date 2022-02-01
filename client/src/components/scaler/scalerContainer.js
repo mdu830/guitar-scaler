@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button, Navbar } from 'reactstrap';
 // Scales
 import ScalerGrid from './scalerGrid';
-import EmScaleData from './scales/E/EScale'
+import EScaleData from './scales/E/EScale'
 import FScaleData from './scales/F/FScale';
 import FSharpScaleData from './scales/F#/F#Scale';
 import GScaleData from './scales/G/GScale';
@@ -19,13 +19,13 @@ import DSharpScaleData from './scales/D#/D#Scale';
 
 export default function GuitarScaler() {
 
-    const [scale, setScale] = useState(EmScaleData)
+    const [scale, setScale] = useState(EScaleData)
 
     const marks = [
         {
             value: 0,
             label: 'Em',
-            scale: EmScaleData,
+            scale: EScaleData,
         },
         {
             value: 1,
@@ -85,11 +85,12 @@ export default function GuitarScaler() {
 
     ];
 
-    const handleUpClick = () => {
-        setScale(marks[11].scale)
-    }
     const handleDownClick = () => {
         setScale(marks[10].scale)
+    }
+
+    const handleUpClick = () => {
+        setScale(marks[11].scale)
     }
 
     return (
