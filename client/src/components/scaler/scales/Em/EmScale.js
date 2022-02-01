@@ -1,4 +1,4 @@
-const scaleData = {
+const EmScaleData = {
 
     highE: [
         { isDot: true },
@@ -169,4 +169,4 @@ const scaleData = {
     }
 }
 
-export default scaleData;
+export default EmScaleData;

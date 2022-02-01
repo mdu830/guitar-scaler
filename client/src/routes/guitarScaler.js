@@ -1,6 +1,5 @@
 import Header from "../components/header/header";
-import GuitarScaler from "../components/scaler/scaler";
-// import './style.css'
+import GuitarScaler from "../components/scaler/scalerContainer";
 
 
 export default function Scaler() {
