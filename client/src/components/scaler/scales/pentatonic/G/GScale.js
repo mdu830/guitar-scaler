@@ -167,14 +167,6 @@ const GScaleData = {
            { start: '1A' , end: '1E' },
            { start: '1E' , end: '0E' }, 
  
- 
-
-
- 
-
-
-
-
        ],
        section5: [
            { color: 'rgba(42, 255, 202, 0.671)'},
