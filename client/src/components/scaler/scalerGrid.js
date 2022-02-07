@@ -1,4 +1,5 @@
 import './style.css'
+import Section from './scales/section'
 // grids
 import HighE from './grids/highE'
 import B from './grids/B'
@@ -20,11 +21,11 @@ export default function ScalerGrid(data) {
             <A data={scale.A}/>
             <E data={scale.E}/>
             {/* lines */}
-            {/* <Section data={scale.sectionLines.section1} />
+            <Section data={scale.sectionLines.section1} />
             <Section data={scale.sectionLines.section2} />
             <Section data={scale.sectionLines.section3} />
             <Section data={scale.sectionLines.section4} />
-            <Section data={scale.sectionLines.section5} /> */}
+            <Section data={scale.sectionLines.section5} />
         </div>
     )
 }

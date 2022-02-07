@@ -98,6 +98,7 @@ const EmScaleData = {
 
     sectionLines: {
          section1: [
+            { color: 'rgba(255, 0, 0, 0.841)'},
             { start: '0e' , end: '3e' },
             { start: '3e' , end: '3B' },
             { start: '3B' , end: '2G' },
@@ -112,6 +113,7 @@ const EmScaleData = {
             { start: '0B' , end: '0e' }
         ],
         section2: [
+            { color: 'rgba(255, 138, 42, 0.671)'},
             { start: '3e' , end: '3B' },
             { start: '3B' , end: '2G' },
             { start: '2G' , end: '2D' },
@@ -126,6 +128,7 @@ const EmScaleData = {
             { start: '5E' , end: '3E' }
         ],
         section3: [
+            { color: 'rgba(251, 255, 42, 0.671)'},
             { start: '5e' , end: '5B' },
             { start: '5B' , end: '4G' },
             { start: '4G' , end: '5D' },
@@ -140,6 +143,7 @@ const EmScaleData = {
             { start: '7E' , end: '5E' }
         ],        
         section4: [
+            { color: 'rgba(85, 255, 42, 0.671)'},
             { start: '7e' , end: '8B' },
             { start: '8B' , end: '7G' },
             { start: '7D' , end: '7A' },
@@ -153,6 +157,7 @@ const EmScaleData = {
             { start: '10E' , end: '7E' }
         ],
         section5: [
+            { color: 'rgba(42, 255, 202, 0.671)'},
             { start: '10e' , end: '10B' },
             { start: '10B' , end: '9G' },
             { start: '9G' , end: '9D' },
