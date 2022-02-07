@@ -143,4 +143,15 @@
     width: 4.15%; 
  }
 
+.controlBar {
+    border: 1px solid black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 30vh;
+    padding: 1em;
+    background: linear-gradient(
+        0deg, #1f1f1f 0%, #2c2c2c 100%
+    )
+}
+
 
