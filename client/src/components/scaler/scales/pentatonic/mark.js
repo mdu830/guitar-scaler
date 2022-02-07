@@ -16,7 +16,7 @@ import DSharpScaleData from './D#/D#Scale'
 const marks = [
     {
         value: 0,
-        label: 'Em',
+        label: 'E',
         scale: EScaleData,
     },
     {
