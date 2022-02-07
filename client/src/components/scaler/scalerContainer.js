@@ -29,7 +29,7 @@ export default function GuitarScaler() {
                 <ScalerGrid data={scale} />
             </div>
             <div className="controlBar" color="dark">
-                <Box sx={{ width: 'auto', padding: '25px'}}>
+                <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px'}}>
                     <Slider
                         value={value}
                         min={0}
