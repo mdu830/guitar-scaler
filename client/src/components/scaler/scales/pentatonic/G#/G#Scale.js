@@ -166,11 +166,6 @@ const GSharpScaleData = {
            { start: '2A' , end: '2E' },
            { start: '2E' , end: '0E' },
 
-
-
-
-
- 
        ],
        section5: [
            { color: 'rgba(42, 255, 202, 0.671)'},
@@ -186,7 +181,6 @@ const GSharpScaleData = {
            { start: '1D' , end: '1G' },
            { start: '1G' , end: '2B' },
            { start: '2B' , end: '2e' },
-
 
        ]
     }
