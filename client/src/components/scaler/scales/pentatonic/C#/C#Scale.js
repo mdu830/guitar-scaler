@@ -1,105 +1,54 @@
 const CSharpScaleData = {
 
     highE: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false }
+        { isDot: '0e' },
+        { isDot: '2e' },
+        { isDot: '4e' },
+        { isDot: '7e' },
+        { isDot: '9e' },
+        { isDot: '12e' }
     ],
 
     B: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false }
+        { isDot: '0B' },
+        { isDot: '2B' },
+        { isDot: '5B' },
+        { isDot: '7B' },
+        { isDot: '9B' },
+        { isDot: '12B' },
     ],
 
     G: [
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '1G' },
+        { isDot: '4G' },
+        { isDot: '6G' },
+        { isDot: '9G' },
+        { isDot: '11G' }
     ], 
 
     D: [
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false }
+        { isDot: '2D' },
+        { isDot: '4D' },
+        { isDot: '6D' },
+        { isDot: '9D' },
+        { isDot: '11D' }
     ],
 
     A: [
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false }
+        { isDot: '2A' },
+        { isDot: '4A' },
+        { isDot: '7A' },
+        { isDot: '9A' },
+        { isDot: '11A' }
     ],
 
     E: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false }
+        { isDot: '0E' },
+        { isDot: '2E' },
+        { isDot: '4E' },
+        { isDot: '7E' },
+        { isDot: '9E' },
+        { isDot: '12E' }
     ],
     sectionLines: {
         section1: [
