@@ -15,8 +15,9 @@ export default function G(scaleData) {
             <Grid container id="G">
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
-                        <div id={fret.id} className={scale[index].isDot ? 'redDot' : 'dot'}>
-                
+                        <div id={fret.id}
+                            className={scale[index].isDot === fret.id ? 'redDot' : 'dot'}
+                        >
                         </div>
                     </div>
                 ))}

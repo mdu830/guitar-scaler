@@ -18,7 +18,7 @@ export default function HighE(scaleData) {
                     <div key={index} className={fret.className}>
                         <div
                             id={fret.id}
-                            className={scale[index].isDot ? 'redDot' : 'dot'}
+                            className={scale[index].isDot === fret.id ? 'redDot' : 'dot'}
                         />
                     </div>
                 ))}

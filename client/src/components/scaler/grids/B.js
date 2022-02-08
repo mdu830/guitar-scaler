@@ -12,12 +12,14 @@ export default function B(scaleData) {
 
     return (
         <div>
-            {/* High e String */}
+            {/* B String */}
             <Grid container id="B">
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
-                        <div id={fret.id} className={scale[index].isDot ? 'redDot' : 'dot'}>
-                
+                        <div id={fret.id}
+                            className={scale[index].isDot === fret.id ? 'redDot' : 'dot'}
+                        >
+
                         </div>
                     </div>
                 ))}

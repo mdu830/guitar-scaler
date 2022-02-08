@@ -103,7 +103,7 @@ const CSharpScaleData = {
     ],
     sectionLines: {
         section1: [
-           { color: 'rgba(255, 0, 0, 0.841)'},
+        //    { color: 'rgba(255, 0, 0, 0.841)'},
            { start: '9e' , end: '12e' },
            { start: '12e' , end: '12B' },
            { start: '12B' , end: '11G' },
@@ -119,7 +119,7 @@ const CSharpScaleData = {
 
        ],
        section2: [
-           { color: 'rgba(255, 138, 42, 0.671)'},
+        //    { color: 'rgba(255, 138, 42, 0.671)'},
            { start: '12e' , end: '12B' },
            { start: '12B' , end: '11G' },
            { start: '11G' , end: '11D' },
@@ -137,7 +137,7 @@ const CSharpScaleData = {
 
        ],
        section3: [
-           { color: 'rgba(251, 255, 42, 0.671)'},
+        //    { color: 'rgba(251, 255, 42, 0.671)'},
            { start: '2B' , end: '2e' },
            { start: '2e' , end: '4e' },
            { start: '4e' , end: '5B' },
@@ -153,7 +153,7 @@ const CSharpScaleData = {
 
        ],        
        section4: [
-           { color: 'rgba(85, 255, 42, 0.671)'},
+        //    { color: 'rgba(85, 255, 42, 0.671)'},
            { start: '4e' , end: '7e' },
            { start: '7e' , end: '7B' },
            { start: '7B' , end: '6G' },
@@ -169,7 +169,7 @@ const CSharpScaleData = {
 
        ],
        section5: [
-           { color: 'rgba(42, 255, 202, 0.671)'},
+        //    { color: 'rgba(42, 255, 202, 0.671)'},
            { start: '7e' , end: '9e' },
            { start: '9e' , end: '9B' }, 
            { start: '9B' , end: '9G' }, 

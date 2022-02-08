@@ -11,13 +11,13 @@ export default function A(scaleData) {
 
     return (
         <div>
-            {/* High e String */}
+            {/* A String */}
             <Grid container id="A">
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
-                        <div id={fret.id} className={scale[index].isDot ? 'redDot' : 'dot'}>
-                
-                        </div>
+                        <div id={fret.id}
+                            className={scale[index].isDot === fret.id ? 'redDot' : 'dot'}
+                        />
                     </div>
                 ))}
             </Grid>

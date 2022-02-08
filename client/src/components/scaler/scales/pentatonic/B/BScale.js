@@ -103,7 +103,7 @@ const BScaleData = {
     ],
     sectionLines: {
         section1: [
-           { color: 'rgba(255, 0, 0, 0.841)'},
+        //    { color: 'rgba(255, 0, 0, 0.841)'},
            { start: '7e' , end: '10e' },
            { start: '10e' , end: '10B' },
            { start: '10B' , end: '9G' },
@@ -118,7 +118,7 @@ const BScaleData = {
            { start: '7B' , end: '7e' }
        ],
        section2: [
-           { color: 'rgba(255, 138, 42, 0.671)'},
+        //    { color: 'rgba(255, 138, 42, 0.671)'},
            { start: '10e' , end: '10B' },
            { start: '10B' , end: '9G' },
            { start: '9G' , end: '9D' },
@@ -134,7 +134,7 @@ const BScaleData = {
 
        ],
        section3: [
-           { color: 'rgba(251, 255, 42, 0.671)'},
+        //    { color: 'rgba(251, 255, 42, 0.671)'},
            { start: '12e' , end: '12B' },
            { start: '12B' , end: '11G' },
            { start: '11G' , end: '12D' },
@@ -154,7 +154,7 @@ const BScaleData = {
 
        ],        
        section4: [
-           { color: 'rgba(85, 255, 42, 0.671)'},
+        //    { color: 'rgba(85, 255, 42, 0.671)'},
            { start: '2e' , end: '5e' },
            { start: '5e' , end: '5B' },
            { start: '5B' , end: '4G' },
@@ -170,7 +170,7 @@ const BScaleData = {
 
        ],
        section5: [
-           { color: 'rgba(42, 255, 202, 0.671)'},
+        //    { color: 'rgba(42, 255, 202, 0.671)'},
            { start: '5e' , end: '7e' },
            { start: '7e' , end: '7B' }, 
            { start: '7B' , end: '7G' }, 

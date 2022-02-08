@@ -103,7 +103,7 @@ const DScaleData = {
     ],
     sectionLines: {
         section1: [
-           { color: 'rgba(255, 0, 0, 0.841)'},
+        //    { color: 'rgba(255, 0, 0, 0.841)'},
            { start: '12e' , end: '10e' },
            { start: '10e' , end: '10B' },
            { start: '10B' , end: '10G' },
@@ -123,7 +123,7 @@ const DScaleData = {
 
        ],
        section2: [
-           { color: 'rgba(255, 138, 42, 0.671)'},
+        //    { color: 'rgba(255, 138, 42, 0.671)'},
            { start: '1B' , end: '1e' },
            { start: '1e' , end: '3e' },
            { start: '3e' , end: '3B' },
@@ -140,7 +140,7 @@ const DScaleData = {
 
        ],
        section3: [
-           { color: 'rgba(251, 255, 42, 0.671)'},
+        //    { color: 'rgba(251, 255, 42, 0.671)'},
            { start: '3B' , end: '3e' },
            { start: '3e' , end: '5e' },
            { start: '5e' , end: '6B' },
@@ -156,7 +156,7 @@ const DScaleData = {
 
        ],        
        section4: [
-           { color: 'rgba(85, 255, 42, 0.671)'},
+        //    { color: 'rgba(85, 255, 42, 0.671)'},
            { start: '5e' , end: '8e' },
            { start: '8e' , end: '8B' },
            { start: '8B' , end: '7G' },
@@ -172,7 +172,7 @@ const DScaleData = {
 
        ],
        section5: [
-           { color: 'rgba(42, 255, 202, 0.671)'},
+        //    { color: 'rgba(42, 255, 202, 0.671)'},
            { start: '8e' , end: '10e' },
            { start: '10e' , end: '10B' }, 
            { start: '10B' , end: '10G' }, 

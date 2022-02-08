@@ -1,104 +1,62 @@
 const EmScaleData = {
 
     highE: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false},
-        { isDot: true }
+        { isDot: '0e' },
+        { isDot: '3e' },
+        { isDot: '5e' },
+        { isDot: '7e' },
+        { isDot: '10e' },
+        { isDot: '12e' }
     ],
 
     B: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '0B' },
+        { isDot: '3B' },
+        { isDot: '5B' },
+        { isDot: '8B' },
+        { isDot: '10B' },
+        { isDot: '1B' }
     ],
 
     G: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '0G' },
+        { isDot: '2G' },
+        { isDot: '4G' },
+        { isDot: '7G' },
+        { isDot: '9G' },
+        { isDot: '12G' }
     ], 
 
     D: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '0D' },
+        { isDot: '2D' },
+        { isDot: '5D' },
+        { isDot: '7D' },
+        { isDot: '9D' },
+        { isDot: '12D' }
     ],
 
     A: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '0A' },
+        { isDot: '2A' },
+        { isDot: '5A' },
+        { isDot: '7A' },
+        { isDot: '10A' },
+        { isDot: '12A' }
     ],
 
     E: [
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: false },
-        { isDot: true },
-        { isDot: false },
-        { isDot: true }
+        { isDot: '0E' },
+        { isDot: '3E' },
+        { isDot: '5E' },
+        { isDot: '7E' },
+        { isDot: '10E' },
+        { isDot: '12E' }
     ],
 
     sectionLines: {
          section1: [
-            { color: 'rgba(255, 0, 0, 0.841)'},
+            // { color: 'rgba(255, 0, 0, 0.841)'},
             { start: '0e' , end: '3e' },
             { start: '3e' , end: '3B' },
             { start: '3B' , end: '2G' },
@@ -113,7 +71,7 @@ const EmScaleData = {
             { start: '0B' , end: '0e' }
         ],
         section2: [
-            { color: 'rgba(255, 138, 42, 0.671)'},
+            // { color: 'rgba(255, 138, 42, 0.671)'},
             { start: '3e' , end: '3B' },
             { start: '3B' , end: '2G' },
             { start: '2G' , end: '2D' },
@@ -128,7 +86,7 @@ const EmScaleData = {
             { start: '5E' , end: '3E' }
         ],
         section3: [
-            { color: 'rgba(251, 255, 42, 0.671)'},
+            // { color: 'rgba(251, 255, 42, 0.671)'},
             { start: '5e' , end: '5B' },
             { start: '5B' , end: '4G' },
             { start: '4G' , end: '5D' },
@@ -143,7 +101,7 @@ const EmScaleData = {
             { start: '7E' , end: '5E' }
         ],        
         section4: [
-            { color: 'rgba(85, 255, 42, 0.671)'},
+            // { color: 'rgba(85, 255, 42, 0.671)'},
             { start: '7e' , end: '8B' },
             { start: '8B' , end: '7G' },
             { start: '7D' , end: '7A' },
@@ -157,7 +115,7 @@ const EmScaleData = {
             { start: '10E' , end: '7E' }
         ],
         section5: [
-            { color: 'rgba(42, 255, 202, 0.671)'},
+            // { color: 'rgba(42, 255, 202, 0.671)'},
             { start: '10e' , end: '10B' },
             { start: '10B' , end: '9G' },
             { start: '9G' , end: '9D' },

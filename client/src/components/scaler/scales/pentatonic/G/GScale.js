@@ -103,7 +103,7 @@ const GScaleData = {
     ],
     sectionLines: {
         section1: [
-           { color: 'rgba(255, 0, 0, 0.841)'},
+        //    { color: 'rgba(255, 0, 0, 0.841)'},
            { start: '3e' , end: '6e' },
            { start: '6e' , end: '6B' },
            { start: '6B' , end: '5G' },
@@ -118,7 +118,7 @@ const GScaleData = {
            { start: '3B' , end: '3e' }
        ],
        section2: [
-           { color: 'rgba(255, 138, 42, 0.671)'},
+        //    { color: 'rgba(255, 138, 42, 0.671)'},
            { start: '6e' , end: '6B' },
            { start: '6B' , end: '5G' },
            { start: '5G' , end: '5D' },
@@ -134,7 +134,7 @@ const GScaleData = {
 
        ],
        section3: [
-           { color: 'rgba(251, 255, 42, 0.671)'},
+        //    { color: 'rgba(251, 255, 42, 0.671)'},
            { start: '8e' , end: '8B' },
            { start: '8B' , end: '7G' },
            { start: '7G' , end: '8D' },
@@ -150,7 +150,7 @@ const GScaleData = {
 
        ],        
        section4: [
-           { color: 'rgba(85, 255, 42, 0.671)'},
+        //    { color: 'rgba(85, 255, 42, 0.671)'},
            { start: '12e' , end: '10e' }, 
            { start: '10e' , end: '11B' }, 
            { start: '11B' , end: '10G' }, 
@@ -169,7 +169,7 @@ const GScaleData = {
  
        ],
        section5: [
-           { color: 'rgba(42, 255, 202, 0.671)'},
+        //    { color: 'rgba(42, 255, 202, 0.671)'},
            { start: '1e' , end: '1B' }, 
            { start: '1B' , end: '0G' },           
            { start: '0G' , end: '0D' }, 
