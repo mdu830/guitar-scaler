@@ -98,14 +98,6 @@ const EmScaleData = {
 
     sectionLines: {
          section1: [
-            // {
-            // highE: [ { isDot: '0e' }, { isDot: false }, { isDot: false }, { isDot: '3e' } ],
-            // B: [ { isDot: '0B' }, { isDot: false }, { isDot: false }, { isDot: '3B' } ],
-            // G: [ { isDot: '0G' }, { isDot: false }, { isDot: '2G' } ],
-            // D: [ { isDot: '0D' }, { isDot: false }, { isDot: '2D' } ],
-            // A: [ { isDot: '0A' }, { isDot: false }, { isDot: '2A' } ],
-            // E: [ { isDot: '0E' }, { isDot: false }, { isDot: false }, { isDot: '3E' } ]
-            // },
             // { color: 'rgba(255, 0, 0, 0.841)'},
             { start: '0e' , end: '3e' },
             { start: '3e' , end: '3B' },
