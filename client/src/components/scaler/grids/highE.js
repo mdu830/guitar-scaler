@@ -9,7 +9,7 @@ export default function HighE(scaleData) {
     const data = gridData.highE
 
     const scale = scaleData.data;
-    // console.log(scale)
+    // console.log(scale);
     return (
         <div>
             {/* High e String */}
@@ -18,7 +18,7 @@ export default function HighE(scaleData) {
                     <div key={index} className={fret.className}>
                         <div
                             id={fret.id}
-                            className={scale[index].isDot === fret.id ? 'redDot' : 'dot'}
+                            className={scale[index].isDot === fret.id  ? 'redDot' : 'dot'}
                         />
                     </div>
                 ))}

@@ -1,52 +1,99 @@
 const CScaleData = {
 
     highE: [
+        { isDot: false },
         { isDot: '1e' },
+        { isDot: false },
         { isDot: '3e' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '6e' },
+        { isDot: false },
         { isDot: '8e' },
-        { isDot: '11e' }
+        { isDot: false },
+        { isDot: false },
+        { isDot: '11e' },
+        { isDot: false }
     ],
 
     B: [
+        { isDot: false },
         { isDot: '1B' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '4B' },
+        { isDot: false },
         { isDot: '6B' },
+        { isDot: false },
         { isDot: '8B' },
-        { isDot: '11B' }
+        { isDot: false },
+        { isDot: false },
+        { isDot: '11B' },
+        { isDot: false }
     ],
 
     G: [
         { isDot: '0G' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '3G' },
+        { isDot: false },
         { isDot: '5G' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '8G' },
+        { isDot: false },
         { isDot: '10G' },
+        { isDot: false },
         { isDot: '12G' }
     ], 
 
     D: [
+        { isDot: false },
         { isDot: '1D' },
+        { isDot: false },
         { isDot: '3D' },
+        { isDot: false },
         { isDot: '5D' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '8D' },
-        { isDot: '10D' }
+        { isDot: false },
+        { isDot: '10D' },
+        { isDot: false },
+        { isDot: false }
     ],
 
     A: [
+        { isDot: false },
         { isDot: '1A' },
+        { isDot: false },
         { isDot: '3A' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '6A' },
+        { isDot: false },
         { isDot: '8A' },
-        { isDot: '10A' }
+        { isDot: false },
+        { isDot: '10A' },
+        { isDot: false },
+        { isDot: false }
     ],
 
     E: [
+        { isDot: false },
         { isDot: '1E' },
+        { isDot: false },
         { isDot: '3E' },
+        { isDot: false },
+        { isDot: false },
         { isDot: '6E' },
+        { isDot: false },
         { isDot: '8E' },
-        { isDot: '11E' }
+        { isDot: false },
+        { isDot: false },
+        { isDot: '11E' },
+        { isDot: false }
     ],
     sectionLines: {
         section1: [

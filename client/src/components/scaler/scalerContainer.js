@@ -22,7 +22,6 @@ export default function GuitarScaler() {
         }
       };
 
-
     return (
         <div id="application">
             <div id='scaler'>

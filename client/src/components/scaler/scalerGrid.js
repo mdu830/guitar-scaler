@@ -9,7 +9,7 @@ import A from './grids/A'
 import E from './grids/E'
 
 export default function ScalerGrid(data) {
-    // console.log(data.data)
+    // console.log(data.data.sectionLines.section1[0].highE)
     const scale = data.data
     return (
         <div>

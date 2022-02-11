@@ -12,7 +12,6 @@ import CSharpScaleData from './C#/C#Scale'
 import DScaleData from './D/DScale'
 import DSharpScaleData from './D#/D#Scale'
 
-
 const marks = [
     {
         value: 0,
