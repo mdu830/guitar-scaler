@@ -14,6 +14,7 @@ export default function GuitarScaler() {
     
     const [value, setValue] = useState(0);
     const [scale, setScale] = useState(marks[0].scale)
+    // console.log(scale)
 
     const handleChange = (event, newValue) => {
         if (typeof newValue === 'number') {

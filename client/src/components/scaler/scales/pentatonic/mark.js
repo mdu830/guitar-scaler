@@ -1,4 +1,5 @@
 // Scales
+// import EmScaleData from './E/EScaleNew'
 import EScaleData from './E/EScale'
 import FScaleData from './F/FScale'
 import FSharpScaleData from './F#/F#Scale'
@@ -11,6 +12,8 @@ import CScaleData from './C/CScale'
 import CSharpScaleData from './C#/C#Scale'
 import DScaleData from './D/DScale'
 import DSharpScaleData from './D#/D#Scale'
+
+// console.log(EmScaleData.section1[0].highE);
 
 const marks = [
     {
