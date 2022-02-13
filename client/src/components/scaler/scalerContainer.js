@@ -5,7 +5,6 @@ import marks from './scales/pentatonic/mark';
 import {
     Slider,
     Box,
-    FormGroup,
     FormControlLabel,
     Switch
 } from '@mui/material';
@@ -17,15 +16,30 @@ function valueLabelFormat(value) {
 
 
 export default function GuitarScaler() {
-
-    const [value, setValue] = useState(0);
+    // slider states (for scale keys)
+    const [sliderValue, setSliderValue] = useState(0);
     const [scale, setScale] = useState(marks[0].scale)
+    // console.log(scale)
 
-    console.log(scale)
+    // select states (for show/hide scale sections)
+    const [currentScale, setCurrentScale] = useState([
+        scale.section1,
+        scale.section2,
+        scale.section3,
+        scale.section4,
+        scale.section5
+    ])
+    console.log(currentScale)
 
-    const handleChange = (event, newValue) => {
+    const handleSectionSelect = (event, section) => {
+        // take in this section(prop) at this event
+        // if section is true make false else make true
+    }
+
+
+    const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
-            setValue(newValue);
+            setSliderValue(newValue);
             setScale(marks[newValue].scale)
         }
     };
@@ -38,23 +52,43 @@ export default function GuitarScaler() {
             <div className="controlBar" color="dark">
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
                     <Slider
-                        value={value}
+                        value={sliderValue}
                         min={0}
                         step={1}
                         max={11}
                         getAriaValueText={valueLabelFormat}
                         valueLabelFormat={valueLabelFormat}
-                        onChange={handleChange}
+                        onChange={handleSliderChange}
                         valueLabelDisplay="auto"
                         aria-labelledby="non-linear-slider"
                     />
                 </Box>
-                <Box>
-                    <FormControlLabel control={<Switch defaultChecked />} label="Section 1" />
-                    <FormControlLabel control={<Switch defaultChecked />} label="Section 2" />
-                    <FormControlLabel control={<Switch defaultChecked />} label="Section 3" />
-                    <FormControlLabel control={<Switch defaultChecked />} label="Section 4" />
-                    <FormControlLabel control={<Switch defaultChecked />} label="Section 5" />
+                <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
+                    {/* need handleselect call here */}
+                    <FormControlLabel 
+                    control={<Switch defaultChecked />} 
+                    label="Section 1"
+                    section={1} />
+
+                    <FormControlLabel 
+                    control={<Switch defaultChecked />} 
+                    label="Section 2"
+                    section={2} />
+
+                    <FormControlLabel 
+                    control={<Switch defaultChecked />} 
+                    label="Section 3" 
+                    section={3} />
+
+                    <FormControlLabel 
+                    control={<Switch defaultChecked />} 
+                    label="Section 4" 
+                    section={4}/
+                    >
+                    <FormControlLabel 
+                    control={<Switch defaultChecked />} 
+                    label="Section 5"
+                    section={5}/>
                 </Box>
             </div>
 
