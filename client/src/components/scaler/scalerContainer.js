@@ -33,7 +33,7 @@ export default function GuitarScaler() {
 
     const handleSectionSelect = (event, section) => {
         // take in this section(prop) at this event
-        // if section is true make false else make true
+        // if section is true setCurrentScale(this section.values to false) else make scale. this section default
     }
 
 

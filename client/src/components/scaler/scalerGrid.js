@@ -2,11 +2,11 @@ import './style.css'
 import { useState } from 'react'
 // grids
 import HighE from './grids/highE'
-import Bee from './grids/B'
-import Gee from './grids/G'
-import Dee from './grids/D'
-import Ayy from './grids/A'
-import Eee from './grids/E'
+import B from './grids/B'
+import G from './grids/G'
+import D from './grids/D'
+import A from './grids/A'
+import E from './grids/E'
 
 export default function ScalerGrid(data) {
 
@@ -16,11 +16,11 @@ export default function ScalerGrid(data) {
         <div>
             {/* grids */}
             <HighE data={scaleData}/>
-            <Bee data={scaleData}/>
-            <Gee data={scaleData}/>
-            <Dee data={scaleData}/>
-            <Ayy data={scaleData}/>
-            <Eee data={scaleData}/>
+            <B data={scaleData}/>
+            <G data={scaleData}/>
+            <D data={scaleData}/>
+            <A data={scaleData}/>
+            <E data={scaleData}/>
             {/* lines */}
             {/* <Section data={scale.sectionLines.section1} />
             <Section data={scale.sectionLines.section2} />
