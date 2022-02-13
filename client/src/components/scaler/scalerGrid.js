@@ -1,31 +1,32 @@
 import './style.css'
-import Section from './scales/section'
+import { useState } from 'react'
 // grids
 import HighE from './grids/highE'
-import B from './grids/B'
-import G from './grids/G'
-import D from './grids/D'
-import A from './grids/A'
-import E from './grids/E'
+import Bee from './grids/B'
+import Gee from './grids/G'
+import Dee from './grids/D'
+import Ayy from './grids/A'
+import Eee from './grids/E'
 
 export default function ScalerGrid(data) {
-    // console.log(data.data.sectionLines.section1[0].highE)
-    const scale = data.data
+
+    const scaleData = data.data
+
     return (
         <div>
             {/* grids */}
-            <HighE data={scale.highE}/>
-            <B data={scale.B}/>
-            <G data={scale.G}/>
-            <D data={scale.D}/>
-            <A data={scale.A}/>
-            <E data={scale.E}/>
+            <HighE data={scaleData}/>
+            <Bee data={scaleData}/>
+            <Gee data={scaleData}/>
+            <Dee data={scaleData}/>
+            <Ayy data={scaleData}/>
+            <Eee data={scaleData}/>
             {/* lines */}
-            <Section data={scale.sectionLines.section1} />
+            {/* <Section data={scale.sectionLines.section1} />
             <Section data={scale.sectionLines.section2} />
             <Section data={scale.sectionLines.section3} />
             <Section data={scale.sectionLines.section4} />
-            <Section data={scale.sectionLines.section5} />
+            <Section data={scale.sectionLines.section5} /> */}
         </div>
     )
 }
