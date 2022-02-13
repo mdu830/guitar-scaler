@@ -33,7 +33,8 @@ export default function GuitarScaler() {
 
     const handleSectionSelect = (event, section) => {
         // take in this section(prop) at this event
-        // if section is true setCurrentScale(this section.values to false) else make scale. this section default
+        // if section is true setCurrentScale(this section.values to false) 
+        // else make scale. this section default
     }
 
 
@@ -47,6 +48,7 @@ export default function GuitarScaler() {
     return (
         <div id="application">
             <div id='scaler'>
+                {/* pass currentScale here */}
                 <ScalerGrid data={scale} />
             </div>
             <div className="controlBar" color="dark">
