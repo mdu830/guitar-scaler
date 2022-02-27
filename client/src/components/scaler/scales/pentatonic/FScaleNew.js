@@ -52,85 +52,90 @@ const FScaleData = [
         sectionLines: [
             {
                 section1: [
-                    { start: '0e', end: '3e' },
-                    { start: '3e', end: '3B' },
-                    { start: '3B', end: '2G' },
-                    { start: '2G', end: '2D' },
-                    { start: '2D', end: '2A' },
-                    { start: '2A', end: '3E' },
-                    { start: '3E', end: '0E' },
-                    { start: '0E', end: '0A' },
-                    { start: '0A', end: '0D' },
-                    { start: '0D', end: '0G' },
-                    { start: '0G', end: '0B' },
-                    { start: '0B', end: '0e' }
+                    { start: '1e', end: '4e' },
+                    { start: '4e', end: '4B' },
+                    { start: '4B', end: '3G' },
+                    { start: '3G', end: '3D' },
+                    { start: '3D', end: '3A' },
+                    { start: '3A', end: '4E' },
+                    { start: '4E', end: '1E' },
+                    { start: '1E', end: '1A' },
+                    { start: '1A', end: '1D' },
+                    { start: '1D', end: '1G' },
+                    { start: '1G', end: '1B' },
+                    { start: '1B', end: '1e' }
                 ],
                 sectionLineColor: { color: 'rgba(255, 0, 0, 0.841)' }
             },
             {
                 section2: [
-                    { start: '3e', end: '3B' },
-                    { start: '3B', end: '2G' },
-                    { start: '2G', end: '2D' },
-                    { start: '2D', end: '2A' },
-                    { start: '2A', end: '3E' },
-                    { start: '3e', end: '5e' },
-                    { start: '5e', end: '5B' },
-                    { start: '5B', end: '4G' },
-                    { start: '4G', end: '5D' },
-                    { start: '5D', end: '5A' },
-                    { start: '5A', end: '5E' },
-                    { start: '5E', end: '3E' }
+                    { start: '4e', end: '4B' },
+                    { start: '4B', end: '3G' },
+                    { start: '3G', end: '3D' },
+                    { start: '3D', end: '3A' },
+                    { start: '3A', end: '4E' },
+                    { start: '4e', end: '6e' },
+                    { start: '6e', end: '6B' },
+                    { start: '6B', end: '5G' },
+                    { start: '5G', end: '6D' },
+                    { start: '6D', end: '6A' },
+                    { start: '6A', end: '6E' },
+                    { start: '6E', end: '4E' }
+
                 ],
                 sectionLineColor: { color: 'rgba(255, 138, 42, 0.671)' }
             },
             {
                 section3: [
-                    { start: '5e', end: '5B' },
-                    { start: '5B', end: '4G' },
-                    { start: '4G', end: '5D' },
-                    { start: '5D', end: '5A' },
-                    { start: '5A', end: '5E' },
-                    { start: '5e', end: '7e' },
-                    { start: '7e', end: '8B' },
-                    { start: '8B', end: '7G' },
-                    { start: '7G', end: '7D' },
-                    { start: '7D', end: '7A' },
-                    { start: '7A', end: '7E' },
-                    { start: '7E', end: '5E' }
+                    { start: '6e', end: '6B' },
+                    { start: '6B', end: '5G' },
+                    { start: '5G', end: '6D' },
+                    { start: '6D', end: '6A' },
+                    { start: '6A', end: '6E' },
+                    { start: '6e', end: '8e' },
+                    { start: '8e', end: '9B' },
+                    { start: '9B', end: '8G' },
+                    { start: '8G', end: '8D' },
+                    { start: '8D', end: '8A' },
+                    { start: '8A', end: '8E' },
+                    { start: '8E', end: '6E' }
+
                 ],
                 sectionLineColor: { color: 'rgba(251, 255, 42, 0.671)' }
             },
             {
                 section4: [
-                    { start: '7e', end: '8B' },
-                    { start: '8B', end: '7G' },
-                    { start: '7D', end: '7A' },
-                    { start: '7A', end: '7E' },
-                    { start: '7e', end: '10e' },
-                    { start: '10e', end: '10B' },
-                    { start: '10B', end: '9G' },
-                    { start: '9G', end: '9D' },
-                    { start: '9D', end: '10A' },
-                    { start: '10A', end: '10E' },
-                    { start: '10E', end: '7E' }
+                    { start: '8e', end: '9B' },
+                    { start: '9B', end: '8G' },
+                    { start: '8D', end: '8A' },
+                    { start: '8A', end: '8E' },
+                    { start: '8e', end: '11e' },
+                    { start: '11e', end: '11B' },
+                    { start: '11B', end: '10G' },
+                    { start: '10G', end: '10D' },
+                    { start: '10D', end: '11A' },
+                    { start: '11A', end: '11E' },
+                    { start: '11E', end: '8E' }
+
                 ],
                 sectionLineColor: { color: 'rgba(85, 255, 42, 0.671)' }
             },
             {
                 section5: [
-                    { start: '10e', end: '10B' },
-                    { start: '10B', end: '9G' },
-                    { start: '9G', end: '9D' },
-                    { start: '9D', end: '10A' },
-                    { start: '10A', end: '10E' },
-                    { start: '10e', end: '12e' },
-                    { start: '12e', end: '12B' },
-                    { start: '12B', end: '12G' },
-                    { start: '12G', end: '12D' },
-                    { start: '12D', end: '12A' },
-                    { start: '12A', end: '12E' },
-                    { start: '12E', end: '10E' }
+                    { start: '11e', end: '12e' },
+                    { start: '11e', end: '11B' },
+                    { start: '11B', end: '10G' },
+                    { start: '10G', end: '10D' },
+                    { start: '10D', end: '11A' },
+                    { start: '11A', end: '11E' },
+                    { start: '11E', end: '12E' },
+                    { start: '0E', end: '1E' },
+                    { start: '1E', end: '1A' },
+                    { start: '1A', end: '1D' },
+                    { start: '1D', end: '1G' },
+                    { start: '1G', end: '1B' },
+                    { start: '1B', end: '1e' },
+                    { start: '1e', end: '0e' }
                 ],
                 sectionLineColor: { color: 'rgba(42, 255, 202, 0.671)' }
 
