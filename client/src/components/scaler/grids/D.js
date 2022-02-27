@@ -19,11 +19,11 @@ export default function D(scaleData) {
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
                         <div id={fret.id}>
-                            {frets.map((finger, index) =>
-                                finger === fret.id ?
-                                    <div key={index} className='redDot' />
-                                    :
-                                    <div key={index} className='dot' />
+                            {frets.map((finger, index) => {
+                                if (finger === fret.id) {
+                                    return <div key={index} className='redDot' />
+                                }
+                            }
                             )}
                         </div>
                     </div>
