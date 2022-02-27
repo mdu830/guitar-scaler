@@ -2,8 +2,6 @@ import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
 
-
-
 export default function D(scaleData) {
 
     const data = gridData.D

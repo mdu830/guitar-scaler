@@ -1,9 +1,6 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
-import { useEffect, useState } from 'react'
-
-
 
 export default function HighE(scaleData) {
 

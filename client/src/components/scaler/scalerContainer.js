@@ -8,11 +8,9 @@ import {
     Switch
 } from '@mui/material';
 
-
 function valueLabelFormat(value) {
     return `key of ${marks[value].label}`;
 }
-
 
 export default function GuitarScaler() {
 
@@ -76,7 +74,6 @@ export default function GuitarScaler() {
     return (
         <div id="application">
             <div id='scaler'>
-                {/* pass currentScale here */}
                 <ScalerGrid data={currentScale} />
             </div>
             <div className="controlBar" color="dark">
@@ -94,7 +91,6 @@ export default function GuitarScaler() {
                     />
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    {/* need handleselect call here */}
                     <Switch
                         id='one'
                         checked={checked.one}
