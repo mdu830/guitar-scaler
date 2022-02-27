@@ -11,7 +11,7 @@ export default function HighE(scaleData) {
 
     const frets = scaleData.data
 
-    console.log(frets)
+    // console.log(frets)
 
     return (
 

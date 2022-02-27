@@ -1,5 +1,4 @@
 import './style.css'
-import { useState } from 'react'
 // grids
 import HighE from './grids/highE'
 import B from './grids/B'
@@ -11,7 +10,7 @@ import E from './grids/E'
 export default function ScalerGrid(data) {
 
     const scaleData = data.data
-    console.log(scaleData.highE)
+    // console.log(scaleData.highE)
     return (
         <div>
             {/* grids */}

@@ -9,7 +9,7 @@ export default function D(scaleData) {
     const data = gridData.D
     const frets = scaleData.data
 
-    console.log(frets)
+    // console.log(frets)
 
     return (
 

@@ -1,19 +1,6 @@
 // Scales
-import EScaleData from './E/EScaleNew'
-// import EScaleData from './E/EScale'
-// import FScaleData from './F/FScaleNew'
-// import FScaleData from './F/FScale'
-
-// import FSharpScaleData from './F#/F#Scale'
-// import GScaleData from './G/GScale'
-// import GSharpScaleData from './G#/G#Scale'
-// import AScaleData from './A/AScale'
-// import ASharpScaleData from './A#/A#Scale'
-// import BScaleData from './B/BScale'
-// import CScaleData from './C/CScale'
-// import CSharpScaleData from './C#/C#Scale'
-// import DScaleData from './D/DScale'
-// import DSharpScaleData from './D#/D#Scale'
+import EScaleData from './EScaleNew'
+import FScaleData from './FScaleNew';
 
 const marks = [
     {
@@ -24,7 +11,7 @@ const marks = [
     {
         value: 1,
         label: 'F',
-        // scale: FScaleData,
+        scale: FScaleData,
     },
     {
         value: 2,

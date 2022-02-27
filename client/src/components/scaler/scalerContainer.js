@@ -16,28 +16,35 @@ function valueLabelFormat(value) {
 
 export default function GuitarScaler() {
 
-
-    // slider states (for adjusting the scale key)
     const [sliderValue, setSliderValue] = useState(0);
 
-    const [currentScale, setCurrentScale] = useState(marks[sliderValue].scale.default[0])
+    const [checked, setChecked] = useState(false);
+
+    const [sectionNum, setSectionNum] = useState(0)
+
+    const [currentScale, setCurrentScale] = useState(marks[sliderValue].scale[sectionNum])
 
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
+            
         }
     };
 
-    const [checked, setChecked] = useState(true);
-
     const handleSection = (event) => {
-
         setChecked(event.target.checked);
-
-        const showHide = event.target.checked
-            ? marks[sliderValue].scale.section1[0]
-            : marks[sliderValue].scale.section1[1]
+        const showHide = event.target.checked ? setSectionNum(1) : setSectionNum(0)
+        return showHide
     }
+
+    useEffect(() => {
+        setCurrentScale(marks[sliderValue].scale[sectionNum])
+    }, [sliderValue])
+
+    useEffect(() => {
+        setCurrentScale(marks[sliderValue].scale[sectionNum])
+    }, [sectionNum])
+
 
     return (
         <div id="application">
@@ -62,6 +69,7 @@ export default function GuitarScaler() {
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
                     {/* need handleselect call here */}
                     <Switch
+                        id='section1'
                         checked={checked}
                         onChange={handleSection}
                     />

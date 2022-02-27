@@ -9,7 +9,7 @@ export default function B(scaleData) {
 
     const frets = scaleData.data
 
-    console.log(frets)
+    // console.log(frets)
 
     return (
 
