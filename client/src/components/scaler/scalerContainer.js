@@ -16,9 +16,15 @@ function valueLabelFormat(value) {
 
 export default function GuitarScaler() {
 
-    const [sliderValue, setSliderValue] = useState(0);
+    const [sliderValue, setSliderValue] = useState(0)
 
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState({
+        one: false,
+        two: false,
+        three: false,
+        four: false,
+        five: false
+    })
 
     const [sectionNum, setSectionNum] = useState(0)
 
@@ -27,14 +33,35 @@ export default function GuitarScaler() {
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
-            
         }
     };
 
     const handleSection = (event) => {
-        setChecked(event.target.checked);
-        const showHide = event.target.checked ? setSectionNum(1) : setSectionNum(0)
-        return showHide
+
+        const id = event.target.id
+        const check = event.target.checked
+        let num
+
+        switch (id) {
+            case 'one': num = 1
+                setChecked({ one: check, two: false, three: false, four: false, five: false })
+                break
+            case 'two': num = 2
+                setChecked({ one: false, two: check, three: false, four: false, five: false })
+                break
+            case 'three': num = 3
+                setChecked({ one: false, two: false, three: check, four: false, five: false })
+                break
+            case 'four': num = 4
+                setChecked({ one: false, two: false, three: false, four: check, five: false })
+                break
+            case 'five': num = 5
+                setChecked({ one: false, two: false, three: false, four: false, five: check })
+                break
+            default:
+                break
+        }
+        return check ? setSectionNum(num) : setSectionNum(0)
     }
 
     useEffect(() => {
@@ -69,8 +96,28 @@ export default function GuitarScaler() {
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
                     {/* need handleselect call here */}
                     <Switch
-                        id='section1'
-                        checked={checked}
+                        id='one'
+                        checked={checked.one}
+                        onChange={handleSection}
+                    />
+                    <Switch
+                        id='two'
+                        checked={checked.two}
+                        onChange={handleSection}
+                    />
+                    <Switch
+                        id='three'
+                        checked={checked.three}
+                        onChange={handleSection}
+                    />
+                    <Switch
+                        id='four'
+                        checked={checked.four}
+                        onChange={handleSection}
+                    />
+                    <Switch
+                        id='five'
+                        checked={checked.five}
                         onChange={handleSection}
                     />
                 </Box>
