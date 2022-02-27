@@ -11,16 +11,16 @@ import E from './grids/E'
 export default function ScalerGrid(data) {
 
     const scaleData = data.data
-
+    console.log(scaleData.highE)
     return (
         <div>
             {/* grids */}
-            <HighE data={scaleData}/>
-            <B data={scaleData}/>
-            <G data={scaleData}/>
-            <D data={scaleData}/>
-            <A data={scaleData}/>
-            <E data={scaleData}/>
+            <HighE data={scaleData.highE}/>
+            <B data={scaleData.B}/>
+            <G data={scaleData.G}/>
+            <D data={scaleData.D}/>
+            <A data={scaleData.A}/>
+            <E data={scaleData.E}/>
             {/* lines */}
             {/* <Section data={scale.sectionLines.section1} />
             <Section data={scale.sectionLines.section2} />

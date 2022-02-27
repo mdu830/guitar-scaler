@@ -1,11 +1,10 @@
 import './style.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
 import marks from './scales/pentatonic/mark';
 import {
     Slider,
     Box,
-    FormControlLabel,
     Switch
 } from '@mui/material';
 
@@ -16,40 +15,35 @@ function valueLabelFormat(value) {
 
 
 export default function GuitarScaler() {
-    // slider states (for scale keys)
+
+
+    // slider states (for adjusting the scale key)
     const [sliderValue, setSliderValue] = useState(0);
-    const [scale, setScale] = useState(marks[0].scale)
-    // console.log(scale)
 
-    // select states (for show/hide scale sections)
-    const [currentScale, setCurrentScale] = useState([
-        scale.section1,
-        scale.section2,
-        scale.section3,
-        scale.section4,
-        scale.section5
-    ])
-    console.log(currentScale)
-
-    const handleSectionSelect = (event, section) => {
-        // take in this section(prop) at this event
-        // if section is true setCurrentScale(this section.values to false) 
-        // else make scale. this section default
-    }
-
+    const [currentScale, setCurrentScale] = useState(marks[sliderValue].scale.default[0])
 
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
-            setScale(marks[newValue].scale)
         }
     };
+
+    const [checked, setChecked] = useState(true);
+
+    const handleSection = (event) => {
+
+        setChecked(event.target.checked);
+
+        const showHide = event.target.checked
+            ? marks[sliderValue].scale.section1[0]
+            : marks[sliderValue].scale.section1[1]
+    }
 
     return (
         <div id="application">
             <div id='scaler'>
                 {/* pass currentScale here */}
-                <ScalerGrid data={scale} />
+                <ScalerGrid data={currentScale} />
             </div>
             <div className="controlBar" color="dark">
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
@@ -67,30 +61,10 @@ export default function GuitarScaler() {
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
                     {/* need handleselect call here */}
-                    <FormControlLabel 
-                    control={<Switch defaultChecked />} 
-                    label="Section 1"
-                    section={1} />
-
-                    <FormControlLabel 
-                    control={<Switch defaultChecked />} 
-                    label="Section 2"
-                    section={2} />
-
-                    <FormControlLabel 
-                    control={<Switch defaultChecked />} 
-                    label="Section 3" 
-                    section={3} />
-
-                    <FormControlLabel 
-                    control={<Switch defaultChecked />} 
-                    label="Section 4" 
-                    section={4}/
-                    >
-                    <FormControlLabel 
-                    control={<Switch defaultChecked />} 
-                    label="Section 5"
-                    section={5}/>
+                    <Switch
+                        checked={checked}
+                        onChange={handleSection}
+                    />
                 </Box>
             </div>
 
