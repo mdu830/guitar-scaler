@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
@@ -16,10 +17,10 @@ export default function A(scaleData) {
             <Grid container id="A" >
                 {data.map((fret, index) => (
                     <div key={index} className={fret.className}>
-                        <div id={fret.id}>
+                        <div >
                             {frets.map((finger, index) => {
                                 if (finger === fret.id) {
-                                    return <div key={index} className='redDot' />
+                                    return <div key={index} id={fret.id} className='redDot' />
                                 }
                             }
                             )}

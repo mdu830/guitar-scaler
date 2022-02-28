@@ -6,11 +6,14 @@ import G from './grids/G'
 import D from './grids/D'
 import A from './grids/A'
 import E from './grids/E'
+// sections
+import Section from './scales/section'
 
 export default function ScalerGrid(data) {
 
-    const scaleData = data.data
-    // console.log(scaleData.highE)
+    const scaleData = data.data[0]
+    const lineData = data.data[1]
+    
     return (
         <div>
             {/* grids */}
@@ -21,11 +24,12 @@ export default function ScalerGrid(data) {
             <A data={scaleData.A}/>
             <E data={scaleData.E}/>
             {/* lines */}
-            {/* <Section data={scale.sectionLines.section1} />
-            <Section data={scale.sectionLines.section2} />
-            <Section data={scale.sectionLines.section3} />
-            <Section data={scale.sectionLines.section4} />
-            <Section data={scale.sectionLines.section5} /> */}
+            {scaleData.section.map((section, index) => {
+                // console.log(lineData[index])
+                return [index] ? <Section key={index} data={lineData[index]}/> : <div key={index} />
+            })}
+
+
         </div>
     )
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import './style.css'
 import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
@@ -13,9 +14,18 @@ function valueLabelFormat(value) {
 }
 
 export default function GuitarScaler() {
-
+    // key slider
     const [sliderValue, setSliderValue] = useState(0)
+    const [sectionNum, setSectionNum] = useState(0)
+    const fingers = marks[sliderValue].scale[sectionNum]
+    const lines = marks[sliderValue].scale[6].sectionLines
 
+    const handleSliderChange = (event, newValue) => {
+        if (typeof newValue === 'number') {
+            setSliderValue(newValue);
+        }
+    };
+    // section switches 
     const [checked, setChecked] = useState({
         one: false,
         two: false,
@@ -24,15 +34,7 @@ export default function GuitarScaler() {
         five: false
     })
 
-    const [sectionNum, setSectionNum] = useState(0)
-
-    const [currentScale, setCurrentScale] = useState(marks[sliderValue].scale[sectionNum])
-
-    const handleSliderChange = (event, newValue) => {
-        if (typeof newValue === 'number') {
-            setSliderValue(newValue);
-        }
-    };
+    const [currentScale, setCurrentScale] = useState([fingers, lines])
 
     const handleSection = (event) => {
 
@@ -63,11 +65,11 @@ export default function GuitarScaler() {
     }
 
     useEffect(() => {
-        setCurrentScale(marks[sliderValue].scale[sectionNum])
+        setCurrentScale([fingers, lines])
     }, [sliderValue])
 
     useEffect(() => {
-        setCurrentScale(marks[sliderValue].scale[sectionNum])
+        setCurrentScale([fingers, lines])
     }, [sectionNum])
 
 
