@@ -18,9 +18,9 @@ export default function GuitarScaler() {
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
 
-    const fingers = marks[sliderValue].scale[sectionNum]
+    const frets = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
-    // console.log(lines[0])
+
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
@@ -35,7 +35,7 @@ export default function GuitarScaler() {
         five: false
     })
 
-    const [currentScale, setCurrentScale] = useState([fingers, lines])
+    const [currentScale, setCurrentScale] = useState([frets, lines])
 
     const handleSection = (event) => {
 
@@ -67,11 +67,11 @@ export default function GuitarScaler() {
     }
 
     useEffect(() => {
-        setCurrentScale([fingers, lines])
+        setCurrentScale([frets, lines])
     }, [sliderValue])
 
     useEffect(() => {
-        setCurrentScale([fingers, lines])
+        setCurrentScale([frets, lines])
     }, [sectionNum])
 
 
