@@ -52,7 +52,6 @@ const EScaleData = [
         A: ['10A', '12A'],
         E: ['10E', '12E'],
         section: [false, false, false, false, true]
-
     },
     {
         sectionLines: [
@@ -100,8 +99,7 @@ const EScaleData = [
                     { start: '12D' , end: '12A' }, { start: '12A' , end: '12E' }, { start: '12E' , end: '10E' }
                 ],
                 color: 'rgba(42, 255, 202, 0.671)'
-            }
-            
+            }  
         ] 
     }    
 ]
