@@ -6,7 +6,7 @@ import gridData from './data/gridData'
 export default function D(scaleData) {
 
     const data = gridData.D
-    const frets = scaleData.data
+    const dots = scaleData.data
 
     // console.log(frets)
 
@@ -15,18 +15,21 @@ export default function D(scaleData) {
         <div>
             {/* D String */}
             <Grid container id="D" >
-                {data.map((fret, index) => (
+            {data.map((fret, index) => 
                     <div key={index} className={fret.className}>
-                        <div >
-                            {frets.map((finger, index) => {
-                                if (finger === fret.id) {
-                                    return <div key={index} id={fret.id} className='redDot' />
-                                }
-                            }
-                            )}
-                        </div>
+                        {/* this is forced and is incorrect maybe forEach will fix*/
+                            dots[0] !== fret.id 
+                            && dots[1] !== fret.id 
+                            && dots[2] !== fret.id 
+                            && dots[3] !== fret.id 
+                            && dots[4] !== fret.id 
+                            && dots[5] !== fret.id 
+                            && dots[6] !== fret.id
+                            ? <div key={index} id={fret.id} className='dot' /> 
+                            : <div key={index} id={fret.id} className='redDot' />
+                        }
                     </div>
-                ))}
+                )}
             </Grid>
         </div>
     )

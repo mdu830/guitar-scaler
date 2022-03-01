@@ -26,8 +26,9 @@ export default function ScalerGrid(data) {
             <E data={scaleData.E}/>
             {/* lines */}
             {lineData.map((section, index) => {
-                // console.log(scaleData.section[index])
-                return scaleData.section[index] ? <Section key={index} data={lineData[index]}/> : <div key={index} />
+                return scaleData.section[index] 
+                ? <Section key={index} data={lineData[index]}/> 
+                : <div key={index} />
             })}
 
 

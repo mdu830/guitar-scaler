@@ -17,6 +17,17 @@
     z-index: +1;
 }
 
+.dot {
+    /* margin-top: 10px;
+    margin-left: 35px; */
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 45px;
+    border: rgba(0, 0, 0, 0) solid 1px;
+    margin: auto;
+}
+
 .redDot {
     /* margin-top: 10px;
     margin-left: 35px; */
@@ -78,7 +89,6 @@
     /* background-color: rgba(255, 0, 0, 0.507); */
     border: rgba(0, 0, 0, 0) 1px solid;
 }
-
 
 .fret0 {
     margin-left: 1.6%;
