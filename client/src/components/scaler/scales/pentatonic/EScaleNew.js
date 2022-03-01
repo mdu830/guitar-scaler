@@ -78,7 +78,7 @@ const EScaleData = [
                     { start: '5e' , end: '5B' }, { start: '5B' , end: '4G' }, { start: '4G' , end: '5D' },
                     { start: '5D' , end: '5A' }, { start: '5A' , end: '5E' }, { start: '5e' , end: '7e' },
                     { start: '7e' , end: '8B' }, { start: '8B' , end: '7G' }, { start: '7G' , end: '7D' },
-                    { start: '7D' , end: '7A' }, { start: '7A' , end: '7E' }, { start: '7E' , end: '5E' }
+                    { start: '7D' , end: '7A' }, { start: '7A' , end: '7E' }, { start: '7E' , end: '5E' },
                 ], 
                 color: 'rgba(251, 255, 42, 0.671)'
             },

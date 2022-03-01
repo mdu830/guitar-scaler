@@ -1,6 +1,7 @@
 // Scales
 import EScaleData from './EScaleNew'
 import FScaleData from './FScaleNew';
+import FSharpScale from './F#ScaleNew'
 
 const marks = [
     {
@@ -16,7 +17,7 @@ const marks = [
     {
         value: 2,
         label: 'F#',
-        // scale: FSharpScaleData,
+        scale: FSharpScale,
     },
     {
         value: 3,
