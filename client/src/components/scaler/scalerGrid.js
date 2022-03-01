@@ -7,7 +7,7 @@ import D from './grids/D'
 import A from './grids/A'
 import E from './grids/E'
 // sections
-import Section from './scales/section'
+import Section from './scales/elements/section'
 
 export default function ScalerGrid(data) {
 
