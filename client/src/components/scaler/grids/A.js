@@ -2,6 +2,7 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
+import Dot from '../scales/elements/dot'
 
 export default function A(scaleData) {
 
@@ -26,7 +27,7 @@ export default function A(scaleData) {
                                 && dots[5] !== fret.id
                                 && dots[6] !== fret.id
                                 ? <div key={index} id={fret.id} className='dot' />
-                                : <div key={index} id={fret.id} className='redDot' />
+                                : <Dot key={index} data={fret.id}/>
                         }
                     </div>
                 )}
