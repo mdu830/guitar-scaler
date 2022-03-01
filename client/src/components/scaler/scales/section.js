@@ -14,7 +14,7 @@ export default function Section1(data) {
                     key={index}
                     start={line.start}
                     end={line.end}
-                    color={sectionLines.sectionLineColor.color}
+                    color={sectionLines.color}
                     showHead={false}
                     strokeWidth={4}
                     curveness={0.9}

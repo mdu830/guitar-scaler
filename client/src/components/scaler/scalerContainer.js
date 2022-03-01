@@ -17,9 +17,10 @@ export default function GuitarScaler() {
     // key slider
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
+
     const fingers = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
-
+    // console.log(lines[0])
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
@@ -59,6 +60,7 @@ export default function GuitarScaler() {
                 setChecked({ one: false, two: false, three: false, four: false, five: check })
                 break
             default:
+                setChecked({ one: false, two: false, three: false, four: false, five: false })
                 break
         }
         return check ? setSectionNum(num) : setSectionNum(0)
@@ -93,30 +95,11 @@ export default function GuitarScaler() {
                     />
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    <Switch
-                        id='one'
-                        checked={checked.one}
-                        onChange={handleSection}
-                    />
-                    <Switch
-                        id='two'
-                        checked={checked.two}
-                        onChange={handleSection}
-                    />
-                    <Switch
-                        id='three'
-                        checked={checked.three}
-                        onChange={handleSection}
-                    />
-                    <Switch
-                        id='four'
-                        checked={checked.four}
-                        onChange={handleSection}
-                    />
-                    <Switch
-                        id='five'
-                        checked={checked.five}
-                        onChange={handleSection}
+                    <Switch id='one' checked={checked.one} onChange={handleSection} />
+                    <Switch id='two' checked={checked.two} onChange={handleSection} />
+                    <Switch id='three' checked={checked.three} onChange={handleSection} />
+                    <Switch id='four' checked={checked.four}onChange={handleSection} />
+                    <Switch id='five' checked={checked.five} onChange={handleSection}
                     />
                 </Box>
             </div>

@@ -13,6 +13,7 @@ export default function ScalerGrid(data) {
 
     const scaleData = data.data[0]
     const lineData = data.data[1]
+    // console.log(scaleData)
     
     return (
         <div>
@@ -24,9 +25,9 @@ export default function ScalerGrid(data) {
             <A data={scaleData.A}/>
             <E data={scaleData.E}/>
             {/* lines */}
-            {scaleData.section.map((section, index) => {
-                // console.log(lineData[index])
-                return [index] ? <Section key={index} data={lineData[index]}/> : <div key={index} />
+            {lineData.map((section, index) => {
+                // console.log(scaleData.section[index])
+                return scaleData.section[index] ? <Section key={index} data={lineData[index]}/> : <div key={index} />
             })}
 
 
