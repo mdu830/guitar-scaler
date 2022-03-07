@@ -28,11 +28,7 @@ export default function GuitarScaler() {
     };
     // section switches 
     const [checked, setChecked] = useState({
-        one: false,
-        two: false,
-        three: false,
-        four: false,
-        five: false
+        one: false, two: false, three: false, four: false, five: false
     })
 
     const [currentScale, setCurrentScale] = useState([frets, lines])
@@ -41,29 +37,29 @@ export default function GuitarScaler() {
 
         const id = event.target.id
         const check = event.target.checked
-        let num
+        const value = event.target.value
 
         switch (id) {
-            case 'one': num = 1
+            case 'one': 
                 setChecked({ one: check, two: false, three: false, four: false, five: false })
                 break
-            case 'two': num = 2
+            case 'two': 
                 setChecked({ one: false, two: check, three: false, four: false, five: false })
                 break
-            case 'three': num = 3
+            case 'three': 
                 setChecked({ one: false, two: false, three: check, four: false, five: false })
                 break
-            case 'four': num = 4
+            case 'four': 
                 setChecked({ one: false, two: false, three: false, four: check, five: false })
                 break
-            case 'five': num = 5
+            case 'five': 
                 setChecked({ one: false, two: false, three: false, four: false, five: check })
                 break
             default:
                 setChecked({ one: false, two: false, three: false, four: false, five: false })
                 break
         }
-        return check ? setSectionNum(num) : setSectionNum(0)
+        return check ? setSectionNum(value) : setSectionNum(0)
     }
 
     useEffect(() => {
@@ -95,11 +91,11 @@ export default function GuitarScaler() {
                     />
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    <Switch id='one' checked={checked.one} onChange={handleSection} />
-                    <Switch id='two' checked={checked.two} onChange={handleSection} />
-                    <Switch id='three' checked={checked.three} onChange={handleSection} />
-                    <Switch id='four' checked={checked.four}onChange={handleSection} />
-                    <Switch id='five' checked={checked.five} onChange={handleSection}
+                    <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
+                    <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
+                    <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
+                    <Switch id='four' value={4} checked={checked.four}onChange={handleSection} />
+                    <Switch id='five' value={5} checked={checked.five} onChange={handleSection}
                     />
                 </Box>
                 
