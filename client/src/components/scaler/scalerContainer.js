@@ -2,7 +2,7 @@
 import './style.css'
 import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
-import usePentatonic from './scales/pentatonic/usePentatonic';
+// import usePentatonic from './scales/pentatonic/usePentatonic';
 import marks from './scales/pentatonic/mark';
 import {
     Slider,
@@ -19,14 +19,17 @@ export default function GuitarScaler() {
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
 
-    // custom scale hook tester //////////////////
-    const scaleHook = usePentatonic(sliderValue)
+    ////////// custom scale hook tester ///////////
 
-    const newFrets = scaleHook[sectionNum]
-    const newLines = scaleHook[6].sectionLines
+    // const scaleHook = usePentatonic(sliderValue)
 
-    console.log([newFrets, newLines])
-    // ///////////////////////////////////////////
+    // const newFrets = scaleHook[sectionNum]
+    // const newLines = scaleHook[6].sectionLines
+
+    // console.log([newFrets, newLines])
+
+    //////////////////////////////////////////////
+
     const frets = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
 

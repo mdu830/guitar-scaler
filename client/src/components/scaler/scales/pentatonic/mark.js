@@ -1,7 +1,7 @@
 // Scales
-import EScaleData from './EScaleNew'
-import FScaleData from './FScaleNew';
-import FSharpScale from './F#ScaleNew'
+import EScaleData from './scales/EScaleNew'
+import FScaleData from './scales/FScaleNew';
+import FSharpScale from './scales/F#ScaleNew'
 
 const marks = [
     {
