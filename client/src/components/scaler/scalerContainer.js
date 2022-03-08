@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import './style.css'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import ScalerGrid from './scalerGrid';
 import marks from './scales/pentatonic/mark';
 import {
@@ -17,48 +17,29 @@ export default function GuitarScaler() {
     // key slider
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
+    // section switches 
 
+    const defaultChecks = {
+     'one': false, 'two': false, 'three': false, 'four': false, 'five': false
+    }
+
+    const [checked, setChecked] = useState(defaultChecks)
     const frets = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
+    // data that gets passed to children
+    const [currentScale, setCurrentScale] = useState([frets, lines])
 
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
         }
     };
-    // section switches 
-    const [checked, setChecked] = useState({
-        one: false, two: false, three: false, four: false, five: false
-    })
-
-    const [currentScale, setCurrentScale] = useState([frets, lines])
 
     const handleSection = (event) => {
-
         const id = event.target.id
         const check = event.target.checked
         const value = event.target.value
-
-        switch (id) {
-            case 'one': 
-                setChecked({ one: check, two: false, three: false, four: false, five: false })
-                break
-            case 'two': 
-                setChecked({ one: false, two: check, three: false, four: false, five: false })
-                break
-            case 'three': 
-                setChecked({ one: false, two: false, three: check, four: false, five: false })
-                break
-            case 'four': 
-                setChecked({ one: false, two: false, three: false, four: check, five: false })
-                break
-            case 'five': 
-                setChecked({ one: false, two: false, three: false, four: false, five: check })
-                break
-            default:
-                setChecked({ one: false, two: false, three: false, four: false, five: false })
-                break
-        }
+        setChecked({...defaultChecks, [id]: check})
         return check ? setSectionNum(value) : setSectionNum(0)
     }
 
@@ -91,14 +72,14 @@ export default function GuitarScaler() {
                     />
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
+                    <Switch id={'one'} value={1} checked={checked.one} onChange={handleSection} />
                     <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
                     <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
-                    <Switch id='four' value={4} checked={checked.four}onChange={handleSection} />
+                    <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
                     <Switch id='five' value={5} checked={checked.five} onChange={handleSection}
                     />
                 </Box>
-                
+
             </div>
 
         </div >
