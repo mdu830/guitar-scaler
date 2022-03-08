@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import './style.css'
-import { useEffect, useState, useReducer } from 'react';
+import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
 import marks from './scales/pentatonic/mark';
 import {
@@ -14,32 +14,35 @@ function valueLabelFormat(value) {
 }
 
 export default function GuitarScaler() {
-    // key slider
+
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
-    // section switches 
 
-    const defaultChecks = {
-     'one': false, 'two': false, 'three': false, 'four': false, 'five': false
-    }
-
-    const [checked, setChecked] = useState(defaultChecks)
     const frets = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
+
+    // switch checks
+    const defaultChecks = {
+        'one': false, 'two': false, 'three': false, 'four': false, 'five': false
+    }
+    const [checked, setChecked] = useState(defaultChecks)
+
     // data that gets passed to children
     const [currentScale, setCurrentScale] = useState([frets, lines])
 
+    // slider function
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
         }
     };
-
+    
+    // switch functions
     const handleSection = (event) => {
         const id = event.target.id
         const check = event.target.checked
         const value = event.target.value
-        setChecked({...defaultChecks, [id]: check})
+        setChecked({ ...defaultChecks, [id]: check })
         return check ? setSectionNum(value) : setSectionNum(0)
     }
 
@@ -79,9 +82,7 @@ export default function GuitarScaler() {
                     <Switch id='five' value={5} checked={checked.five} onChange={handleSection}
                     />
                 </Box>
-
             </div>
-
         </div >
     );
 }
