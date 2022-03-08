@@ -2,6 +2,7 @@
 import './style.css'
 import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
+import usePentatonic from './scales/pentatonic/usePentatonic';
 import marks from './scales/pentatonic/mark';
 import {
     Slider,
@@ -18,13 +19,19 @@ export default function GuitarScaler() {
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
 
+    // custom scale hook tester //////////////////
+    const scaleHook = usePentatonic(sliderValue)
+
+    const newFrets = scaleHook[sectionNum]
+    const newLines = scaleHook[6].sectionLines
+
+    console.log([newFrets, newLines])
+    // ///////////////////////////////////////////
     const frets = marks[sliderValue].scale[sectionNum]
     const lines = marks[sliderValue].scale[6].sectionLines
 
     // switch checks
-    const defaultChecks = {
-        'one': false, 'two': false, 'three': false, 'four': false, 'five': false
-    }
+    const defaultChecks = { 'one': false, 'two': false, 'three': false, 'four': false, 'five': false }
     const [checked, setChecked] = useState(defaultChecks)
 
     // data that gets passed to children
@@ -36,7 +43,7 @@ export default function GuitarScaler() {
             setSliderValue(newValue);
         }
     };
-    
+
     // switch functions
     const handleSection = (event) => {
         const id = event.target.id
@@ -46,6 +53,7 @@ export default function GuitarScaler() {
         return check ? setSectionNum(value) : setSectionNum(0)
     }
 
+    // update when values have changed
     useEffect(() => {
         setCurrentScale([frets, lines])
     }, [sliderValue])
