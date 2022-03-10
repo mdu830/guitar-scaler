@@ -7,6 +7,7 @@ import GSharpScale from './scales/G#ScaleNew';
 import AScaleData from './scales/AScaleNew';
 import ASharpScale from './scales/A#ScaleNew';
 import BScaleData from './scales/BScaleNew';
+import CScaleData from './scales/CScaleNew';
 
 const marks = [
     {
@@ -52,7 +53,7 @@ const marks = [
     {
         value: 8,
         label: 'C',
-        // scale: CScaleData,
+        scale: CScaleData,
     },
     {
         value: 9,
