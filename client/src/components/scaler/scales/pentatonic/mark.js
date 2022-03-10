@@ -4,6 +4,7 @@ import FScaleData from './scales/FScaleNew';
 import FSharpScale from './scales/F#ScaleNew'
 import GScaleData from './scales/GScaleNew';
 import GSharpScale from './scales/G#ScaleNew';
+import AScaleData from './scales/AScaleNew';
 
 const marks = [
     {
@@ -34,7 +35,7 @@ const marks = [
     {
         value: 5,
         label: 'A',
-        // scale: AScaleData,
+        scale: AScaleData,
     },
     {
         value: 6,
