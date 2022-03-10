@@ -6,6 +6,7 @@ import GScaleData from './scales/GScaleNew';
 import GSharpScale from './scales/G#ScaleNew';
 import AScaleData from './scales/AScaleNew';
 import ASharpScale from './scales/A#ScaleNew';
+import BScaleData from './scales/BScaleNew';
 
 const marks = [
     {
@@ -46,7 +47,7 @@ const marks = [
     {
         value: 7,
         label: 'B',
-        // scale: BScaleData,
+        scale: BScaleData,
     },
     {
         value: 8,
