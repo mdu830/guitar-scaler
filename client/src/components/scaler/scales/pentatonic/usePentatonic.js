@@ -7,7 +7,9 @@ const usePentatonic = (sliderValue) => {
     const num = sliderValue
 
     const calc = (number) => {
-        return number + sliderValue
+        let calc = number + sliderValue
+        const over = calc > 12 ? 1 : calc
+        return  over
     }
 
     const pentatonic = [
@@ -71,9 +73,10 @@ const usePentatonic = (sliderValue) => {
     const [scale, setScale] = useState(pentatonic)
 
     useEffect(() => {
-        // setScale(pentatonic)
-        // console.log(scale)
+        setScale(pentatonic)
     }, [sliderValue])
+
+    console.log(scale[0].highE)
 
     return (scale)
 

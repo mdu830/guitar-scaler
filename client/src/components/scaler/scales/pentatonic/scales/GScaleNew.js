@@ -97,7 +97,8 @@ const GScaleData = [
                     { start: '1e' , end: '1B' }, { start: '1B' , end: '0G' }, { start: '0G' , end: '0D' }, 
                     { start: '0D' , end: '1A' }, { start: '1A' , end: '1E' }, { start: '1E' , end: '3E' }, 
                     { start: '3E' , end: '3A' }, { start: '3A' , end: '3D' }, { start: '3D' , end: '3G' },           
-                    { start: '3G' , end: '3B' }, { start: '3B' , end: '3e' }, { start: '3e' , end: '1e' } 
+                    { start: '3G' , end: '3B' }, { start: '3B' , end: '3e' }, { start: '3e' , end: '1e' },
+                    { start: '12G', end: '12D'} 
                 ],
                 color: 'rgba(42, 255, 202, 0.671)'
             }

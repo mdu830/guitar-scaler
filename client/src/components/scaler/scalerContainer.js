@@ -90,8 +90,7 @@ export default function GuitarScaler() {
                     <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
                     <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
                     <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
-                    <Switch id='five' value={5} checked={checked.five} onChange={handleSection}
-                    />
+                    <Switch id='five' value={5} checked={checked.five} onChange={handleSection}/>
                 </Box>
             </div>
         </div >

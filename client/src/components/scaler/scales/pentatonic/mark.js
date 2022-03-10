@@ -3,6 +3,7 @@ import EScaleData from './scales/EScaleNew'
 import FScaleData from './scales/FScaleNew';
 import FSharpScale from './scales/F#ScaleNew'
 import GScaleData from './scales/GScaleNew';
+import GSharpScale from './scales/G#ScaleNew';
 
 const marks = [
     {
@@ -28,7 +29,7 @@ const marks = [
     {
         value: 4,
         label: 'G#',
-        // scale: GSharpScaleData,
+        scale: GSharpScale,
     },
     {
         value: 5,
