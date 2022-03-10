@@ -9,6 +9,7 @@ import ASharpScale from './scales/A#ScaleNew';
 import BScaleData from './scales/BScaleNew';
 import CScaleData from './scales/CScaleNew';
 import CSharpScale from './scales/C#ScaleNew';
+import DScaleData from './scales/DScaleNew';
 
 const marks = [
     {
@@ -64,7 +65,7 @@ const marks = [
     {
         value: 10,
         label: 'D',
-        // scale: DScaleData,
+        scale: DScaleData,
     },
     {
         value: 11,
