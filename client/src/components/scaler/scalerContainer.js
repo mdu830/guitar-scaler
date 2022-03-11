@@ -23,11 +23,6 @@ export default function GuitarScaler() {
 
     // const scaleHook = usePentatonic(sliderValue)
 
-    // const newFrets = scaleHook[sectionNum]
-    // const newLines = scaleHook[6].sectionLines
-
-    // console.log([newFrets, newLines])
-
     //////////////////////////////////////////////
 
     const frets = marks[sliderValue].scale[sectionNum]
@@ -49,11 +44,8 @@ export default function GuitarScaler() {
 
     // switch functions
     const handleSection = (event) => {
-        const id = event.target.id
-        const check = event.target.checked
-        const value = event.target.value
-        setChecked({ ...defaultChecks, [id]: check })
-        return check ? setSectionNum(value) : setSectionNum(0)
+        setChecked({ ...defaultChecks, [event.target.id]: event.target.checked })
+        return event.target.checked ? setSectionNum(event.target.value) : setSectionNum(0)
     }
 
     // update when values have changed
@@ -64,7 +56,6 @@ export default function GuitarScaler() {
     useEffect(() => {
         setCurrentScale([frets, lines])
     }, [sectionNum])
-
 
     return (
         <div id="application">
@@ -86,7 +77,7 @@ export default function GuitarScaler() {
                     />
                 </Box>
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    <Switch id={'one'} value={1} checked={checked.one} onChange={handleSection} />
+                    <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
                     <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
                     <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
                     <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
