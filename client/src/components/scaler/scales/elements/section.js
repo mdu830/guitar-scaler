@@ -1,6 +1,6 @@
 import Xarrow from "react-xarrows";
 
-export default function Section1(data) {
+export default function Section(data) {
 
     const sectionLines = data.data;
     // const sectionColor = data.data.sectionLineColor

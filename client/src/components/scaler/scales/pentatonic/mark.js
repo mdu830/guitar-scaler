@@ -16,7 +16,7 @@ const marks = [
     {
         value: 0,
         label: 'E',
-        scale: EScaleData,
+        scale: EScaleData
     },
     {
         value: 1,

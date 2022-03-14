@@ -2,14 +2,14 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
-import Dot from '../scales/elements/dot'
+import Dot from '../scales/elements/Dot'
 
 export default function E(scaleData) {
 
     const data = gridData.E
-    const dots = scaleData.data
-
-    // console.log(frets)
+    const dots = scaleData.data[0]
+    const arrows = scaleData.data[1]
+    // console.log(arrows)
 
     return (
 
@@ -27,7 +27,7 @@ export default function E(scaleData) {
                                 && dots[5] !== fret.id
                                 && dots[6] !== fret.id
                                 ? <div key={index} id={fret.id} className='dot' />
-                                : <Dot key={index} data={fret.id}/>
+                                : <Dot key={index} data={[fret.id, arrows]}/>
                         }
                     </div>
                 )}
