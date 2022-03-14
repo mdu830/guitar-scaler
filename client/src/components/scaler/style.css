@@ -78,7 +78,7 @@
 
 #highE, #B, #G, #D, #A, #E {
     margin-left: 1%;
-    padding: auto
+    width: auto;
 }
 
 .fret0, .fret1, .fret2, 
@@ -97,7 +97,7 @@
 }
 
 .fret1 {
-    width: 7.102%;
+    width: 7.202%;
 }
 
 .fret2 {
@@ -109,39 +109,39 @@
 }
 
 .fret4 {
-    width: 6.6%; 
+    width: 6.9%; 
 }
 
 .fret5 {
-    width: 6.25%; 
+    width: 6%; 
 }
 
  .fret6 {
-    width: 5.74%; 
+    width: 6.2%; 
 }
 
 .fret7 {
-    width: 5.35%; 
+    width: 5%; 
 }
 
 .fret8 {
-    width: 5.275%; 
+    width: 5.8%; 
 }
 
 .fret9 {
-    width: 4.95%; 
+    width: 4.5%; 
  }
 
 .fret10 {
-    width: 4.7%; 
+    width: 5.3%; 
  }
 
 .fret11 {
-    width: 4.26%; 
+    width: 3.7%; 
  }
 
 .fret12 {
-    width: 4.15%; 
+    width: 4.6%; 
  }
 
 .controlBar {

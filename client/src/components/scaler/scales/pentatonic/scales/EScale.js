@@ -101,7 +101,7 @@ const EScaleData = [
                 color: 'rgba(42, 255, 202, 0.671)'
             }  
         ] 
-    }    
+    }
 ]
 
 export default EScaleData;
