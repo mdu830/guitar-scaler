@@ -5,7 +5,8 @@ export default function HoverSection(data) {
     const nextDot = data.data[1]
 
     return (
-        nextDot[currentDot] !== undefined ?
+        nextDot[currentDot] !== undefined 
+        ?
         <div>
             <Xarrow
                 zIndex={+1}
@@ -16,7 +17,8 @@ export default function HoverSection(data) {
                 strokeWidth={2}
                 curveness={0.9}
             />
-        </div> :
+        </div> 
+        :
         <div />
     )
 }

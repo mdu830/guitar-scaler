@@ -18,7 +18,7 @@ export default function ScalerGrid(data) {
     const handleArrows = (string) => {
         return arrows !== undefined ? arrows[string] : ''
     }
-    
+
     return (
         <div>
             {/* grids */}
@@ -34,8 +34,6 @@ export default function ScalerGrid(data) {
                 ? <Section key={index} data={lineData[index]}/> 
                 : <div key={index} />
             })}
-
-
         </div>
     )
 }

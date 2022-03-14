@@ -1,16 +1,16 @@
 // Scales
-import EScaleData from './scales/EScale'
-import FScaleData from './scales/FScale';
-import FSharpScale from './scales/F#Scale'
-import GScaleData from './scales/GScale';
-import GSharpScale from './scales/G#Scale';
-import AScaleData from './scales/AScale';
-import ASharpScale from './scales/A#Scale';
-import BScaleData from './scales/BScale';
-import CScaleData from './scales/CScale';
-import CSharpScale from './scales/C#Scale';
-import DScaleData from './scales/DScale';
-import DSharpScale from './scales/D#Scale';
+import EScaleData from './lib/EScale'
+import FScaleData from './lib/FScale';
+import FSharpScale from './lib/F#Scale'
+import GScaleData from './lib/GScale';
+import GSharpScale from './lib/G#Scale';
+import AScaleData from './lib/AScale';
+import ASharpScale from './lib/A#Scale';
+import BScaleData from './lib/BScale';
+import CScaleData from './lib/CScale';
+import CSharpScale from './lib/C#Scale';
+import DScaleData from './lib/DScale';
+import DSharpScale from './lib/D#Scale';
 
 const marks = [
     {
