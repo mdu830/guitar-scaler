@@ -15,6 +15,14 @@ const GSharpScale = [
         D: ['4D','6D'],
         A: ['4A', '6A'],
         E: ['4E', '7E'],
+        hoverArrows: {
+            highE: {'4e': '7e'},
+            B: {'4B': '7B', '7B': '4e'},
+            G: {'4G': '6G', '6G': '4B'},
+            D: {'4D': '6D', '6D': '4G'},
+            A: {'4A': '6A', '6A': '4D'},
+            E: {'4E': '7E', '7E': '4A'}
+        },
         section: [true, false, false, false, false]
     },
     {
@@ -24,6 +32,14 @@ const GSharpScale = [
         D: ['6D', '9D'],
         A: ['6A', '9A'],
         E: ['7E', '9E'],
+        hoverArrows: {
+            highE: {'7e': '9e'},
+            B: {'7B': '9B', '9B': '7e'},
+            G: {'6G': '8G', '8G': '7B'},
+            D: {'6D': '9D', '9D': '6G'},
+            A: {'6A': '9A', '9A': '6D'},
+            E: {'7E': '9E', '9E': '6A'}
+        },
         section: [false, true, false, false, false]
     },
     {
@@ -33,6 +49,14 @@ const GSharpScale = [
         D: ['9D', '11D'],
         A: ['9A', '11A'],
         E: ['9E', '11E'],
+        hoverArrows: {
+            highE: {'9e': '11e'},
+            B: {'9B': '12B', '12B': '9e'},
+            G: {'8G': '11G', '11G': '9B'},
+            D: {'9D': '11D', '11D': '8G'},
+            A: {'9A': '11A', '11A': '9D'},
+            E: {'9E': '11E', '11E': '9A'}
+        },
         section: [false, false, true, false, false]
     },
     {
@@ -51,6 +75,14 @@ const GSharpScale = [
         D: ['4D', '1D'],
         A: ['4A', '2A'],
         E: ['4E', '2E'],
+        hoverArrows: {
+            highE: {'2e': '4e'},
+            B: {'2B': '4B', '4B': '2e'},
+            G: {'1G': '4G', '4G': '2B'},
+            D: {'1D': '4D', '4D': '1G'},
+            A: {'2A': '4A', '4A': '1D'},
+            E: {'2E': '4E', '4E': '2A'}
+        },
         section: [false, false, false, false, true]
     },
     {
