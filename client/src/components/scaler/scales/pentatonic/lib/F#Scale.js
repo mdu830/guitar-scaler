@@ -15,6 +15,14 @@ const FSharpScale = [
         D: ['2D', '4D'],
         A: ['2A', '4A'],
         E: ['2E', '5E'],
+        hoverArrows: {
+            highE: {'2e': '5e'},
+            B: {'2B': '5B', '5B': '2e'},
+            G: {'2G': '4G', '4G': '2B'},
+            D: {'2D': '4D', '4D': '2G'},
+            A: {'2A': '4A', '4A': '2D'},
+            E: {'2E': '5E', '5E': '2A'}
+        },
         section: [true, false, false, false, false]
     },
     {
@@ -24,6 +32,14 @@ const FSharpScale = [
         D: ['4D', '7D'],
         A: ['4A', '7A'],
         E: ['5E', '7E'],
+        hoverArrows: {
+            highE: {'5e': '7e'},
+            B: {'5B': '7B', '7B': '5e'},
+            G: {'4G': '6G', '6G': '5B'},
+            D: {'4D': '7D', '7D': '4G'},
+            A: {'4A': '7A', '7A': '4D'},
+            E: {'5E': '7E', '7E': '4A'}
+        },
         section: [false, true, false, false, false]
     },
     {
@@ -33,6 +49,14 @@ const FSharpScale = [
         D: ['7D', '9D'],
         A: ['7A', '9A'],
         E: ['7E', '9E'],
+        hoverArrows: {
+            highE: {'7e': '9e'},
+            B: {'7B': '10B', '10B': '7e'},
+            G: {'6G': '9G', '9G': '7B'},
+            D: {'7D': '9D', '9D': '6G'},
+            A: {'7A': '9A', '9A': '7D'},
+            E: {'7E': '9E', '9E': '7A'}
+        },
         section: [false, false, true, false, false]
     },
     {
@@ -42,6 +66,14 @@ const FSharpScale = [
         D: ['9D', '11D'],
         A: ['9A', '12A'],
         E: ['9E', '12E'],
+        hoverArrows: {
+            highE: {'9e': '12e'},
+            B: {'10B': '12B', '12B': '9e'},
+            G: {'9G': '11G', '11G': '10B'},
+            D: {'9D': '11D', '11D': '9G'},
+            A: {'9A': '12A', '12A': '9D'},
+            E: {'9E': '12E', '12E': '9A'}
+        },
         section: [false, false, false, true, false]
     },
     {
