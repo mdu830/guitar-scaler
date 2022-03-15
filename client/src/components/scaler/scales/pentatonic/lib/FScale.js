@@ -15,6 +15,14 @@ const FScaleData = [
         D: ['1D', '3D'],
         A: ['1A', '3A'],
         E: ['1E', '4E'],
+        hoverArrows: {
+            highE: {'1e': '4e'},
+            B: {'1B': '4B', '4B': '1e'},
+            G: {'1G': '3G', '3G': '1B'},
+            D: {'1D': '3D', '3D': '1G'},
+            A: {'1A': '3A', '3A': '1D'},
+            E: {'1E': '4E', '4E': '1A'}
+        },
         section: [true, false, false, false, false]
     },
     {
@@ -24,6 +32,14 @@ const FScaleData = [
         D: ['3D', '6D'],
         A: ['3A', '6A'],
         E: ['4E', '6E'],
+        hoverArrows: {
+            highE: {'4e': '6e'},
+            B: {'4B': '6B', '6B': '4e'},
+            G: {'3G': '5G', '5G': '4B'},
+            D: {'3D': '6D', '6D': '3G'},
+            A: {'3A': '6A', '6A': '3D'},
+            E: {'4E': '6E', '6E': '3A'}
+        },
         section: [false, true, false, false, false]
     },
     {
@@ -33,6 +49,14 @@ const FScaleData = [
         D: ['6D', '8D'],
         A: ['6A', '8A'],
         E: ['6E', '8E'],
+        hoverArrows: {
+            highE: {'6e': '8e'},
+            B: {'6B': '9B', '9B': '6e'},
+            G: {'5G': '8G', '8G': '6B'},
+            D: {'6D': '8D', '8D': '5G'},
+            A: {'6A': '8A', '8A': '6D'},
+            E: {'6E': '8E', '8E': '6A'}
+        },
         section: [false, false, true, false, false]
     },
     {
@@ -42,6 +66,14 @@ const FScaleData = [
         D: ['8D', '10D'],
         A: ['8A', '11A'],
         E: ['8E', '11E'],
+        hoverArrows: {
+            highE: {'8e': '11e'},
+            B: {'9B': '11B', '11B': '8e'},
+            G: {'8G': '10G', '10G': '9B'},
+            D: {'8D': '10D', '10D': '8G'},
+            A: {'8A': '11A', '11A': '8D'},
+            E: {'8E': '11E', '11E': '8A'}
+        },
         section: [false, false, false, true, false]
     },
     {
@@ -51,6 +83,14 @@ const FScaleData = [
         D: ['1D', '10D'],
         A: ['1A', '11A'],
         E: ['1E', '11E'],
+        // hoverArrows: {
+        //     highE: {'11e': '1e'},
+        //     B: {'11B': '1B', '1B': '11e'},
+        //     G: {'10G': '1G', '1G': '11B'},
+        //     D: {'10D': '1D', '1D': '10G'},
+        //     A: {'11A': '1A', '1A': '10D'},
+        //     E: {'11E': '1E', '1E': '11A'}
+        // },
         section: [false, false, false, false, true]
     },
     {

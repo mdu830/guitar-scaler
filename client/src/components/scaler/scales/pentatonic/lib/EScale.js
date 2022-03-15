@@ -15,7 +15,6 @@ const EScaleData = [
         D: ['0D', '2D'],
         A: ['0A', '2A'],
         E: ['0E', '3E'],
-        section: [true, false, false, false, false],
         hoverArrows: {
             highE: {'0e': '3e'},
             B: {'0B': '3B', '3B': '0e'},
@@ -23,7 +22,8 @@ const EScaleData = [
             D: {'0D': '2D', '2D': '0G'},
             A: {'0A': '2A', '2A': '0D'},
             E: {'0E': '3E', '3E': '0A'}
-        } 
+        },
+        section: [true, false, false, false, false]
     },
     {
         highE: ['3e', '5e'],
@@ -32,7 +32,6 @@ const EScaleData = [
         D: ['2D', '5D'],
         A: ['2A', '5A'],
         E: ['3E', '5E'],
-        section: [false, true, false, false, false],
         hoverArrows: {
             highE: {'3e': '5e'},
             B: {'3B': '5B', '5B': '3e'},
@@ -40,7 +39,8 @@ const EScaleData = [
             D: {'2D': '5D', '5D': '2G'},
             A: {'2A': '5A', '5A': '2D'},
             E: {'3E': '5E', '5E': '2A'}
-        }
+        },
+        section: [false, true, false, false, false]
     },
     {
         highE: ['5e', '7e'],
@@ -49,7 +49,6 @@ const EScaleData = [
         D: ['5D', '7D'],
         A: ['5A', '7A'],
         E: ['5E', '7E'],
-        section: [false, false, true, false, false],
         hoverArrows: {
             highE: {'5e': '7e'},
             B: {'5B': '8B', '8B': '5e'},
@@ -57,7 +56,8 @@ const EScaleData = [
             D: {'5D': '7D', '7D': '4G'},
             A: {'5A': '7A', '7A': '5D'},
             E: {'5E': '7E', '7E': '5A'}
-        }
+        },
+        section: [false, false, true, false, false]
     },
     {
         highE: ['7e', '10e'],
@@ -66,7 +66,6 @@ const EScaleData = [
         D: ['7D', '9D'],
         A: ['7A', '10A'],
         E: ['7E', '10E'],
-        section: [false, false, false, true, false],
         hoverArrows: {
             highE: {'7e': '10e'},
             B: {'8B': '10B', '10B': '7e'},
@@ -74,7 +73,8 @@ const EScaleData = [
             D: {'7D': '9D', '9D': '7G'},
             A: {'7A': '10A', '10A': '7D'},
             E: {'7E': '10E', '10E': '7A'}
-        }
+        },
+        section: [false, false, false, true, false]
     },
     {
         highE: ['10e', '12e'],
@@ -83,7 +83,6 @@ const EScaleData = [
         D: ['9D', '12D'],
         A: ['10A', '12A'],
         E: ['10E', '12E'],
-        section: [false, false, false, false, true],
         hoverArrows: {
             highE: {'10e': '12e'},
             B: {'10B': '12B', '12B': '10e'},
@@ -91,7 +90,8 @@ const EScaleData = [
             D: {'9D': '12D', '12D': '9G'},
             A: {'10A': '12A', '12A': '9D'},
             E: {'10E': '12E', '12E': '10A'}
-        }
+        },
+        section: [false, false, false, false, true]
     },
     {
         sectionLines: [
