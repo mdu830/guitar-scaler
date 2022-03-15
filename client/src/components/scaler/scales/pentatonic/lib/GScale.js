@@ -15,6 +15,14 @@ const GScaleData = [
         D: ['3D','5D'],
         A: ['3A', '5A'],
         E: ['3E', '6E'],
+        hoverArrows: {
+            highE: {'3e': '6e'},
+            B: {'3B': '6B', '6B': '3e'},
+            G: {'3G': '5G', '5G': '3B'},
+            D: {'3D': '5D', '5D': '3G'},
+            A: {'3A': '5A', '5A': '3D'},
+            E: {'3E': '6E', '6E': '3A'}
+        },
         section: [true, false, false, false, false]
     },
     {
@@ -24,6 +32,14 @@ const GScaleData = [
         D: ['5D', '8D'],
         A: ['5A', '8A'],
         E: ['6E', '8E'],
+        hoverArrows: {
+            highE: {'6e': '7e'},
+            B: {'6B': '8B', '8B': '6e'},
+            G: {'5G': '7G', '7G': '6B'},
+            D: {'5D': '8D', '8D': '5G'},
+            A: {'5A': '8A', '8A': '5D'},
+            E: {'6E': '8E', '8E': '5A'}
+        },
         section: [false, true, false, false, false]
     },
     {
@@ -33,6 +49,14 @@ const GScaleData = [
         D: ['8D', '10D'],
         A: ['8A', '10A'],
         E: ['8E', '10E'],
+        hoverArrows: {
+            highE: {'8e': '10e'},
+            B: {'8B': '11B', '11B': '8e'},
+            G: {'7G': '10G', '10G': '8B'},
+            D: {'8D': '10D', '10D': '7G'},
+            A: {'8A': '10A', '10A': '8D'},
+            E: {'8E': '10E', '10E': '8A'}
+        },
         section: [false, false, true, false, false]
     },
     {
@@ -51,6 +75,14 @@ const GScaleData = [
         D: ['3D', '12D', '0D'],
         A: ['3A', '1A'],
         E: ['3E', '1E'],
+        hoverArrows: {
+            highE: {'1e': '3e'},
+            B: {'1B': '3B', '3B': '1e'},
+            G: {'0G': '3G', '3G': '1B'},
+            D: {'0D': '3D', '3D': '0G'},
+            A: {'1A': '3A', '3A': '0D'},
+            E: {'1E': '3E', '3E': '1A'}
+        },
         section: [false, false, false, false, true]
     },
     {
