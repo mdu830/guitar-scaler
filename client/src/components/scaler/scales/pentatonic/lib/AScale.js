@@ -15,6 +15,14 @@ const AScaleData = [
         D: ['5D','7D'],
         A: ['5A', '7A'],
         E: ['5E', '8E'],
+        hoverArrows: {
+            highE: {'5e': '8e'},
+            B: {'5B': '8B', '8B': '5e'},
+            G: {'5G': '7G', '7G': '5B'},
+            D: {'5D': '7D', '7D': '5G'},
+            A: {'5A': '7A', '7A': '5D'},
+            E: {'5E': '8E', '8E': '5A'}
+        },
         section: [true, false, false, false, false]
     },
     {
@@ -24,6 +32,14 @@ const AScaleData = [
         D: ['7D', '10D'],
         A: ['7A', '10A'],
         E: ['8E', '10E'],
+        hoverArrows: {
+            highE: {'8e': '10e'},
+            B: {'8B': '10B', '10B': '8e'},
+            G: {'7G': '9G', '9G': '8B'},
+            D: {'7D': '10D', '10D': '7G'},
+            A: {'7A': '10A', '10A': '7D'},
+            E: {'8E': '10E', '10E': '7A'}
+        },
         section: [false, true, false, false, false]
     },
     {
@@ -33,6 +49,14 @@ const AScaleData = [
         D: ['10D', '12D'],
         A: ['10A', '12A'],
         E: ['10E', '12E'],
+        // hoverArrows: {
+        //     highE: {'10e': '12e'},
+        //     B: {'10B': '1B', '1B': '10e'},
+        //     G: {'9G': '12G', '12G': '10B'},
+        //     D: {'10D': '12D', '12D': '9G'},
+        //     A: {'10A': '12A', '12A': '10D'},
+        //     E: {'10E': '12E', '12E': '10A'}
+        // },
         section: [false, false, true, false, false]
     },
     {
@@ -42,6 +66,14 @@ const AScaleData = [
         D: ['12D', '2D', '0D'],
         A: ['12A', '3A', '0A'],
         E: ['12E', '3E', '0E'],
+        hoverArrows: {
+            highE: {'0e': '3e'},
+            B: {'1B': '3B', '3B': '0e'},
+            G: {'0G': '2G', '2G': '1B'},
+            D: {'0D': '2D', '2D': '0G'},
+            A: {'0A': '3A', '3A': '0D'},
+            E: {'0E': '3E', '3E': '0A'}
+        },
         section: [false, false, false, true, false]
     },
     {
@@ -51,6 +83,14 @@ const AScaleData = [
         D: ['5D', '2D'],
         A: ['5A', '3A'],
         E: ['5E', '3E'],
+        hoverArrows: {
+            highE: {'3e': '5e'},
+            B: {'3B': '5B', '5B': '3e'},
+            G: {'2G': '5G', '5G': '3B'},
+            D: {'2D': '5D', '5D': '2G'},
+            A: {'3A': '5A', '5A': '2D'},
+            E: {'3E': '5E', '5E': '3A'}
+        },
         section: [false, false, false, false, true]
     },
     {
