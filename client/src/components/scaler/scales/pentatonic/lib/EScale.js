@@ -124,10 +124,10 @@ const EScaleData = [
             },
             {
                 section: [
-                    { start: '7e', end: '8B' }, { start: '8B', end: '7G' }, { start: '7D', end: '7A' },
-                    { start: '7A', end: '7E' }, { start: '7e', end: '10e' }, { start: '10e', end: '10B' },
-                    { start: '10B', end: '9G' }, { start: '9G', end: '9D' }, { start: '9D', end: '10A' },
-                    { start: '10A', end: '10E' }, { start: '10E', end: '7E' }
+                    { start: '7e', end: '8B' }, { start: '8B', end: '7G' }, { start: '7G', end: '7D' }, 
+                    { start: '7D', end: '7A' }, { start: '7A', end: '7E' }, { start: '7e', end: '10e' }, 
+                    { start: '10e', end: '10B' }, { start: '10B', end: '9G' }, { start: '9G', end: '9D' }, 
+                    { start: '9D', end: '10A' }, { start: '10A', end: '10E' }, { start: '10E', end: '7E' }
                 ],
                 color: 'rgba(85, 255, 42, 0.671)'
             },

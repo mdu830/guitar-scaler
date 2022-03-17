@@ -116,10 +116,10 @@ const FSharpScale = [
             },
             {
                 section: [
-                    { start: '9e' , end: '10B' }, { start: '10B' , end: '9G' }, { start: '9D' , end: '9A' },
-                    { start: '9A' , end: '9E' }, { start: '9e' , end: '12e' }, { start: '12e' , end: '12B' },
-                    { start: '12B' , end: '11G' }, { start: '11G' , end: '11D' }, { start: '11D' , end: '12A' },
-                    { start: '12A' , end: '12E' }, { start: '12E' , end: '9E' }
+                    { start: '9e' , end: '10B' }, { start: '10B' , end: '9G' }, { start: '9G', end: '9D' }, 
+                    { start: '9D' , end: '9A' }, { start: '9A' , end: '9E' }, { start: '9e' , end: '12e' }, 
+                    { start: '12e' , end: '12B' }, { start: '12B' , end: '11G' }, { start: '11G' , end: '11D' },
+                    { start: '11D' , end: '12A' }, { start: '12A' , end: '12E' }, { start: '12E' , end: '9E' }
                 ],
                 color: 'rgba(85, 255, 42, 0.671)'
             },

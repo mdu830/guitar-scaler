@@ -124,10 +124,10 @@ const FScaleData = [
             },
             {
                 section: [
-                    { start: '8e' , end: '9B' }, { start: '9B' , end: '8G' }, { start: '8D' , end: '8A' },
-                    { start: '8A' , end: '8E' }, { start: '8e' , end: '11e' }, { start: '11e' , end: '11B' },
-                    { start: '11B' , end: '10G' }, { start: '10G' , end: '10D' }, { start: '10D' , end: '11A' }, 
-                    { start: '11A' , end: '11E' }, { start: '11E' , end: '8E' }
+                    { start: '8e' , end: '9B' }, { start: '9B' , end: '8G' }, { start: '8G', end: '8D' }, 
+                    { start: '8D' , end: '8A' }, { start: '8A' , end: '8E' }, { start: '8e' , end: '11e' }, 
+                    { start: '11e' , end: '11B' }, { start: '11B' , end: '10G' }, { start: '10G' , end: '10D' }, 
+                    { start: '10D' , end: '11A' }, { start: '11A' , end: '11E' }, { start: '11E' , end: '8E' }
                 ],
                 color: 'rgba(85, 255, 42, 0.671)'
             },
