@@ -6,14 +6,16 @@ export default function Dot(data) {
     const [show, setShow] = useState(false)
     const arrow = data.data[1]
     // console.log(arrow)
+
     return (
         <div>
             <div
                 id={id}
                 className='redDot'
                 onMouseEnter={() => setShow(true)}
-                onMouseLeave={() => setShow(false)} />
-                { show ? <HoverSection data={[id, arrow]} /> : <div /> }
+                onMouseLeave={() => setShow(false)}
+                />
+            {show ? <HoverSection data={[id, arrow]} /> : <div />}
         </div>
     )
 }
