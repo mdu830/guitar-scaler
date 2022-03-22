@@ -27,7 +27,7 @@ export default function G(scaleData) {
                             && dots[5] !== fret.id 
                             && dots[6] !== fret.id
                             ? <div key={index} id={fret.id} className='dot' /> 
-                            : <Dot key={index} data={[fret.id, arrows]}/>
+                            : <Dot key={index} />
                         }
                     </div>
                 )}

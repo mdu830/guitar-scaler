@@ -9,11 +9,13 @@ export default function HighE(scaleData) {
     const data = gridData.highE
 
     const dots = scaleData.data[0]
-    const arrows = scaleData.data[1]
+    // const arrows = scaleData.data[1]
+    // console.log(dots)
 
     return (
 
         <div>
+        
             {/* High e String */}
             <Grid container id="highE" >
                 {data.map((fret, index) => 
@@ -27,7 +29,7 @@ export default function HighE(scaleData) {
                             && dots[5] !== fret.id 
                             && dots[6] !== fret.id
                             ? <div key={index} id={fret.id} className='dot' /> 
-                            : <Dot key={index} data={[fret.id, arrows]}/>
+                            : <Dot key={index} data={fret.id}/>
                         }
                     </div>
                 )}

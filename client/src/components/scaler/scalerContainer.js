@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import './style.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ScalerGrid from './scalerGrid';
-// import usePentatonic from './scales/pentatonic/usePentatonic';
+import usePentatonic from './scales/pentatonic/hooks/usePentatonic';
 import marks from './scales/pentatonic/mark';
 import {
     Slider,
@@ -16,24 +16,16 @@ function valueLabelFormat(value) {
 
 export default function GuitarScaler() {
 
+    // switch and slider values
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
 
-    ////////// custom scale hook tester ///////////
-
-    // const scaleHook = usePentatonic(sliderValue)
-
-    //////////////////////////////////////////////
-
-    const frets = marks[sliderValue].scale[sectionNum]
-    const lines = marks[sliderValue].scale[6].sectionLines
+    // custom hook
+    const scaleHook = usePentatonic({sliderValue, sectionNum})
 
     // switch checks
     const defaultChecks = { 'one': false, 'two': false, 'three': false, 'four': false, 'five': false }
     const [checked, setChecked] = useState(defaultChecks)
-
-    // data that gets passed to children
-    const [currentScale, setCurrentScale] = useState([frets, lines])
 
     // slider function
     const handleSliderChange = (event, newValue) => {
@@ -48,19 +40,10 @@ export default function GuitarScaler() {
         return event.target.checked ? setSectionNum(event.target.value) : setSectionNum(0)
     }
 
-    // update when values have changed
-    useEffect(() => {
-        setCurrentScale([frets, lines])
-    }, [sliderValue])
-
-    useEffect(() => {
-        setCurrentScale([frets, lines])
-    }, [sectionNum])
-
     return (
         <div id="application">
             <div id='scaler'>
-                <ScalerGrid data={currentScale} />
+                <ScalerGrid data={scaleHook} />
             </div>
             <div className="controlBar" color="dark">
                 <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
