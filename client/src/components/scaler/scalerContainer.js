@@ -4,11 +4,7 @@ import { useState } from 'react';
 import ScalerGrid from './scalerGrid';
 import usePentatonic from './scales/pentatonic/hooks/usePentatonic';
 import marks from './scales/pentatonic/mark';
-import {
-    Slider,
-    Box,
-    Switch
-} from '@mui/material';
+import { Slider, Box, Switch } from '@mui/material';
 
 function valueLabelFormat(value) {
     return `key of ${marks[value].label}`;
@@ -20,7 +16,7 @@ export default function GuitarScaler() {
     const [sliderValue, setSliderValue] = useState(0)
     const [sectionNum, setSectionNum] = useState(0)
 
-    // custom hook
+    // custom hook(s) 
     const scaleHook = usePentatonic({sliderValue, sectionNum})
 
     // switch checks

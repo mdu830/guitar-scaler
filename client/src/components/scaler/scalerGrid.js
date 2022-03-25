@@ -18,6 +18,7 @@ export default function ScalerGrid(data) {
     // const handleArrows = (string) => {
     //     return arrows !== undefined ? arrows[string] : ''
     // }
+    // console.log(scaleData)
 
     return (
         <div>
