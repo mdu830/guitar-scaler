@@ -5,14 +5,14 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     const value = sliderValue
     const section = sectionNum
 
+    function addNewValue([valueOne, valueTwo]) {
+        let oldArr = [valueOne, valueTwo]
+        return oldArr.map((number) =>  number + value > 12 ? number + value - 12 : number + value )
+    }
+
     const Key = (x, y, string) => {
 
         let arr = []
-
-        function addNewValue([valueOne, valueTwo]) {
-            let oldArr = [valueOne, valueTwo]
-            return oldArr.map((number) =>  number + value > 12 ? number + value - 12 : number + value )
-        }
 
         addNewValue([x, y]).map((value) => 
             value === 12 ? arr.push(value, 0) : arr.push(value)

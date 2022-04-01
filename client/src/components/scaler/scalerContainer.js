@@ -7,7 +7,7 @@ import marks from './scales/pentatonic/mark';
 import { Slider, Box, Switch } from '@mui/material';
 
 function valueLabelFormat(value) {
-    return `key of ${marks[value].label}`;
+    return `key of ${marks[value]}`;
 }
 
 export default function GuitarScaler() {
@@ -18,7 +18,7 @@ export default function GuitarScaler() {
 
     // custom hook(s) 
     const scaleHook = usePentatonic({sliderValue, sectionNum})
-
+    // console.log(scaleHook)
     // switch checks
     const defaultChecks = { 'one': false, 'two': false, 'three': false, 'four': false, 'five': false }
     const [checked, setChecked] = useState(defaultChecks)
