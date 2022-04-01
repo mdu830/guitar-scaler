@@ -5,81 +5,77 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     const value = sliderValue
     const section = sectionNum
 
-    const key = (x) => { return x + value > 12 ? x + value - 12 : x + value }
-
-    const newKey = (x, y, string) => {
+    const Key = (x, y, string) => {
 
         let arr = []
 
-        const addNewValue = ([x, y]) => {
-            let oldArr = [x, y]
-            return oldArr.map((number) => { return number + value > 12 ? number + value - 12 : number + value })
+        function addNewValue([valueOne, valueTwo]) {
+            let oldArr = [valueOne, valueTwo]
+            return oldArr.map((number) =>  number + value > 12 ? number + value - 12 : number + value )
         }
 
-        addNewValue([x, y]).map((value) => {
-            return value === 12 ? arr.push(value, 0) : arr.push(value)
-        })
+        addNewValue([x, y]).map((value) => 
+            value === 12 ? arr.push(value, 0) : arr.push(value)
+        )
 
         return arr.map((item) => `${item}${string}`)
-
     }
-    // console.log(newKey(0, 3, 'e'))
 
-    const defKey = [
+    const defaultKey = [
         {
-            highE: [...newKey(0, 3, 'e')],
-            B: [...newKey(0, 3, 'B')],
-            G: [...newKey(0, 2, 'G')],
-            D: [...newKey(0, 2, 'D')],
-            A: [...newKey(0, 2, 'A')],
-            E: [...newKey(0, 3, 'E')],
+            highE: [...Key(0, 3, 'e')],
+            B: [...Key(0, 3, 'B')],
+            G: [...Key(0, 2, 'G')],
+            D: [...Key(0, 2, 'D')],
+            A: [...Key(0, 2, 'A')],
+            E: [...Key(0, 3, 'E')],
         },
         {
-            highE: [...newKey(3, 5, 'e')],
-            B: [...newKey(3, 5, 'B')],
-            G: [...newKey(2, 4, 'G')],
-            D: [...newKey(2, 5, 'D')],
-            A: [...newKey(2, 5, 'A')],
-            E: [...newKey(3, 5, 'E')],
+            highE: [...Key(3, 5, 'e')],
+            B: [...Key(3, 5, 'B')],
+            G: [...Key(2, 4, 'G')],
+            D: [...Key(2, 5, 'D')],
+            A: [...Key(2, 5, 'A')],
+            E: [...Key(3, 5, 'E')],
         },
         {
-            highE: [...newKey(5, 7, 'e')],
-            B: [...newKey(5, 8, 'B')],
-            G: [...newKey(4, 7, 'G')],
-            D: [...newKey(5, 7, 'D')],
-            A: [...newKey(5, 7, 'A')],
-            E: [...newKey(5, 7, 'E')],
+            highE: [...Key(5, 7, 'e')],
+            B: [...Key(5, 8, 'B')],
+            G: [...Key(4, 7, 'G')],
+            D: [...Key(5, 7, 'D')],
+            A: [...Key(5, 7, 'A')],
+            E: [...Key(5, 7, 'E')],
         },
         {
-            highE: [...newKey(7, 10, 'e')],
-            B: [...newKey(8, 10, 'B')],
-            G: [...newKey(7, 9, 'G')],
-            D: [...newKey(7, 9, 'D')],
-            A: [...newKey(7, 10, 'A')],
-            E: [...newKey(7, 10, 'E')],
+            highE: [...Key(7, 10, 'e')],
+            B: [...Key(8, 10, 'B')],
+            G: [...Key(7, 9, 'G')],
+            D: [...Key(7, 9, 'D')],
+            A: [...Key(7, 10, 'A')],
+            E: [...Key(7, 10, 'E')],
         },
         {
-            highE: [...newKey(10, 12, 'e')],
-            B: [...newKey(10, 12, 'B')],
-            G: [...newKey(9, 12, 'G')],
-            D: [...newKey(9, 12, 'D')],
-            A: [...newKey(10, 12, 'A')],
-            E: [...newKey(10, 12, 'E')],
+            highE: [...Key(10, 12, 'e')],
+            B: [...Key(10, 12, 'B')],
+            G: [...Key(9, 12, 'G')],
+            D: [...Key(9, 12, 'D')],
+            A: [...Key(10, 12, 'A')],
+            E: [...Key(10, 12, 'E')],
         }
     ]
 
     const chooseSection = (section) => {
 
         const newPentatonic = {
-            highE: [...new Set([...defKey[0].highE, ...defKey[1].highE, ...defKey[2].highE, ...defKey[3].highE, ...defKey[4].highE])],
-            B: [...new Set([...defKey[0].B, ...defKey[1].B, ...defKey[2].B, ...defKey[3].B, ...defKey[4].B])],
-            G: [...new Set([...defKey[0].G, ...defKey[1].G, ...defKey[2].G, ...defKey[3].G, ...defKey[4].G])],
-            D: [...new Set([...defKey[0].D, ...defKey[1].D, ...defKey[2].D, ...defKey[3].D, ...defKey[4].D])],
-            A: [...new Set([...defKey[0].A, ...defKey[1].A, ...defKey[2].A, ...defKey[3].A, ...defKey[4].A])],
-            E: [...new Set([...defKey[0].E, ...defKey[1].E, ...defKey[2].E, ...defKey[3].E, ...defKey[4].E])],
+            highE: [...new Set([...defaultKey[0].highE, ...defaultKey[1].highE, ...defaultKey[2].highE, ...defaultKey[3].highE, ...defaultKey[4].highE])],
+            B: [...new Set([...defaultKey[0].B, ...defaultKey[1].B, ...defaultKey[2].B, ...defaultKey[3].B, ...defaultKey[4].B])],
+            G: [...new Set([...defaultKey[0].G, ...defaultKey[1].G, ...defaultKey[2].G, ...defaultKey[3].G, ...defaultKey[4].G])],
+            D: [...new Set([...defaultKey[0].D, ...defaultKey[1].D, ...defaultKey[2].D, ...defaultKey[3].D, ...defaultKey[4].D])],
+            A: [...new Set([...defaultKey[0].A, ...defaultKey[1].A, ...defaultKey[2].A, ...defaultKey[3].A, ...defaultKey[4].A])],
+            E: [...new Set([...defaultKey[0].E, ...defaultKey[1].E, ...defaultKey[2].E, ...defaultKey[3].E, ...defaultKey[4].E])],
         }
 
-        return 0 === section ? newPentatonic : defKey[section - 1]
+        return 0 === section ? newPentatonic : defaultKey[section - 1]
     }
 
     const [scale, setScale] = useState(chooseSection(section))
