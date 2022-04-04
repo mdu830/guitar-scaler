@@ -1,5 +1,7 @@
-import { useState } from 'react'
-import HoverSection from './HoverSection'
+// import { useState } from 'react'
+// import HoverSection from '../HoverSection'
+import './style.css'
+
 export default function Dot(data) {
     // add on click here event for sound here
     const id = data.data

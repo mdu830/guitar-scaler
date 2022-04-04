@@ -2,7 +2,7 @@
 import '../style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
-import Dot from '../scales/elements/Dot'
+import Dot from '../scales/elements/dots/Dot'
 
 export default function E(scaleData) {
 

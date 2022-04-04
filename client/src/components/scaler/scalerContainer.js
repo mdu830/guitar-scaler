@@ -19,6 +19,7 @@ export default function GuitarScaler() {
     // custom hook(s) 
     const scaleHook = usePentatonic({sliderValue, sectionNum})
     // console.log(scaleHook)
+    
     // switch checks
     const defaultChecks = { 'one': false, 'two': false, 'three': false, 'four': false, 'five': false }
     const [checked, setChecked] = useState(defaultChecks)
