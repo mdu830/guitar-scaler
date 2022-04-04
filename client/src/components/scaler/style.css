@@ -1,6 +1,7 @@
 #application {
     background-color: rgba(44, 44, 44, 0.699);
 }
+
 #scaler {
     /* background-attachment: fixed; */
     background-size: 100% 89%;
@@ -13,6 +14,15 @@
     padding-top: 63px;
 }
 
+.MuiSlider-thumb {
+    transition: left 1s ease-in;
+    transition: right 1s ease-in;
+}
+
+.MuiSlider-track {
+  transition: width 1s ease-in;
+}
+
 .zindex {
     z-index: +1;
 }
@@ -20,11 +30,13 @@
 #highE {
     padding-top: 11px;
 }
+
 #B {
     padding-top: 6px;
 }
 
-#G, #A{
+#G,
+#A {
     padding-top: 7px;
 }
 
@@ -36,15 +48,28 @@
     padding-top: 5px;
 }
 
-#highE, #B, #G, #D, #A, #E {
+#highE,
+#B,
+#G,
+#D,
+#A,
+#E {
     margin-left: 1%;
     width: auto;
 }
 
-.fret0, .fret1, .fret2, 
-.fret3, .fret4, .fret5, 
-.fret6, .fret7, .fret8, 
-.fret9, .fret10, .fret11, 
+.fret0,
+.fret1,
+.fret2,
+.fret3,
+.fret4,
+.fret5,
+.fret6,
+.fret7,
+.fret8,
+.fret9,
+.fret10,
+.fret11,
 .fret12 {
     /* background-color: rgba(255, 0, 0, 0.507); */
     border: rgba(0, 0, 0, 0) 1px solid;
@@ -61,48 +86,48 @@
 }
 
 .fret2 {
-    width: 7%; 
+    width: 7%;
 }
 
 .fret3 {
-    width: 6.837%; 
+    width: 6.837%;
 }
 
 .fret4 {
-    width: 6.9%; 
+    width: 6.9%;
 }
 
 .fret5 {
-    width: 6%; 
+    width: 6%;
 }
 
- .fret6 {
-    width: 6.2%; 
+.fret6 {
+    width: 6.2%;
 }
 
 .fret7 {
-    width: 5%; 
+    width: 5%;
 }
 
 .fret8 {
-    width: 5.8%; 
+    width: 5.8%;
 }
 
 .fret9 {
-    width: 4.5%; 
- }
+    width: 4.5%;
+}
 
 .fret10 {
-    width: 5.3%; 
- }
+    width: 5.3%;
+}
 
 .fret11 {
-    width: 3.7%; 
- }
+    width: 3.7%;
+}
 
 .fret12 {
-    width: 4.6%; 
- }
+    width: 4.6%;
+}
 
 .controlBar {
     border: 1px solid black;
@@ -110,10 +135,5 @@
     font-family: Arial, sans-serif;
     height: 30vh;
     padding: 1em;
-    background: linear-gradient(
-        0deg, #1f1f1f 0%, #2c2c2c 100%
-    )
+    background: linear-gradient(0deg, #1f1f1f 0%, #2c2c2c 100%)
 }
-
-
-
