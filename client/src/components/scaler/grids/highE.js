@@ -10,7 +10,6 @@ export default function HighE(scaleData) {
 
     const dots = scaleData.data[0]
     // const arrows = scaleData.data[1]
-    // console.log(dots)
 
     return (
 

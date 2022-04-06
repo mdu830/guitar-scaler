@@ -5,8 +5,8 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     const value = sliderValue
     const section = sectionNum
 
-    function addNewValue([valueOne, valueTwo]) {
-        let oldArr = [valueOne, valueTwo]
+    function addNewValue([valueX, valueY]) {
+        let oldArr = [valueX, valueY]
         return oldArr.map((number) =>  number + value > 12 ? number + value - 12 : number + value )
     }
 
@@ -21,7 +21,7 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
         return arr.map((item) => `${item}${string}`)
     }
 
-    const defaultKey = [
+    const fret = [
         {
             highE: [...Key(0, 3, 'e')],
             B: [...Key(0, 3, 'B')],
@@ -66,16 +66,27 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
 
     const chooseSection = (section) => {
 
+
+
         const newPentatonic = {
-            highE: [...new Set([...defaultKey[0].highE, ...defaultKey[1].highE, ...defaultKey[2].highE, ...defaultKey[3].highE, ...defaultKey[4].highE])],
-            B: [...new Set([...defaultKey[0].B, ...defaultKey[1].B, ...defaultKey[2].B, ...defaultKey[3].B, ...defaultKey[4].B])],
-            G: [...new Set([...defaultKey[0].G, ...defaultKey[1].G, ...defaultKey[2].G, ...defaultKey[3].G, ...defaultKey[4].G])],
-            D: [...new Set([...defaultKey[0].D, ...defaultKey[1].D, ...defaultKey[2].D, ...defaultKey[3].D, ...defaultKey[4].D])],
-            A: [...new Set([...defaultKey[0].A, ...defaultKey[1].A, ...defaultKey[2].A, ...defaultKey[3].A, ...defaultKey[4].A])],
-            E: [...new Set([...defaultKey[0].E, ...defaultKey[1].E, ...defaultKey[2].E, ...defaultKey[3].E, ...defaultKey[4].E])],
+            highE: [...new Set([...fret[0].highE, ...fret[1].highE, ...fret[2].highE, ...fret[3].highE, ...fret[4].highE])],
+            B: [...new Set([...fret[0].B, ...fret[1].B, ...fret[2].B, ...fret[3].B, ...fret[4].B])],
+            G: [...new Set([...fret[0].G, ...fret[1].G, ...fret[2].G, ...fret[3].G, ...fret[4].G])],
+            D: [...new Set([...fret[0].D, ...fret[1].D, ...fret[2].D, ...fret[3].D, ...fret[4].D])],
+            A: [...new Set([...fret[0].A, ...fret[1].A, ...fret[2].A, ...fret[3].A, ...fret[4].A])],
+            E: [...new Set([...fret[0].E, ...fret[1].E, ...fret[2].E, ...fret[3].E, ...fret[4].E])],
         }
 
-        return 0 === section ? newPentatonic : defaultKey[section - 1]
+        // function setAll(string) {
+        //     let arr = []
+            
+        //     fret.map((section) => arr.push(...section.highE))
+            
+        //     return new Set(arr)
+        // }
+        // console.log(setAll('highE'))
+
+        return 0 === section ? newPentatonic : fret[section - 1]
     }
 
     const [scale, setScale] = useState(chooseSection(section))
