@@ -19,6 +19,7 @@ export default function GuitarScaler() {
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
+
         }
     };
 
@@ -30,11 +31,17 @@ export default function GuitarScaler() {
     // switch function(s)
     const handleSection = (event) => {
         setChecked({ ...defaultChecks, [event.target.id]: event.target.checked })
-        return event.target.checked ? setSectionNum(event.target.value) : setSectionNum(0)
+        return event.target.checked ? setSectionNum(event.target.value) && setHookData({ sliderValue, sectionNum }) : setSectionNum(0)
     }
 
     // custom hook(s) 
-    const scaleHook = usePentatonic({ sliderValue, sectionNum })
+    const [hookData, setHookData] = useState({ sliderValue, sectionNum })
+    const scaleHook = usePentatonic(hookData)
+
+    useEffect(() => {
+        setHookData({ sliderValue, sectionNum })
+    }, [sectionNum])
+
 
     return (
         <div id="application">
@@ -51,6 +58,7 @@ export default function GuitarScaler() {
                         getAriaValueText={valueLabelFormat}
                         valueLabelFormat={valueLabelFormat}
                         onChange={handleSliderChange}
+                        onChangeCommitted={() => setHookData({ sliderValue, sectionNum })}
                         valueLabelDisplay="auto"
                         aria-labelledby="non-linear-slider"
                     />
