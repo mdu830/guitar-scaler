@@ -14,7 +14,7 @@ export default function G(scaleData) {
             {/* G String giggity */}
             <Grid container id="G" >
                 {data.map((fret, index) =>
-                    <div key={index} className={fret.className}>
+                    <div key={index} className={`${fret.className} fret`}>
                         {
                             dots.map((dot) => {
                                 if (dot === fret.id) {

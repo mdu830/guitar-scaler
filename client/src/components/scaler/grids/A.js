@@ -14,7 +14,7 @@ export default function A(scaleData) {
             {/* A String */}
             <Grid container id="A" >
                 {data.map((fret, index) =>
-                    <div key={index} className={fret.className}>
+                    <div key={index} className={`${fret.className} fret`}>
                         {
                             dots.map((dot) => {
                                 if (dot === fret.id) {
