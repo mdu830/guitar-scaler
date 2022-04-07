@@ -11,7 +11,7 @@ export default function ScalerGrid(data) {
 
     const scaleData = data.data[0]
     const sliderValue = data.data[1]
-    // console.log(sliderValue)
+
     return (
         <div>
             {/* grids */}

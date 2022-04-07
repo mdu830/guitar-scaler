@@ -6,77 +6,81 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     const value = sliderValue
     const section = sectionNum
 
+    // Dots Data (finger placements)
     function addNewValue([valueX, valueY]) {
         let oldArr = [valueX, valueY]
-        return oldArr.map((number) =>  number + value > 12 ? number + value - 12 : number + value )
+        return oldArr.map((number) => number + value > 12 ? number + value - 12 : number + value)
     }
 
     const Key = (x, y, string) => {
         let arr = []
 
-        addNewValue([x, y]).map((value) => 
+        addNewValue([x, y]).map((value) =>
             value === 12 ? arr.push(value, 0) : arr.push(value)
         )
 
         return arr.map((item) => `${item}${string}`)
     }
 
-    const fret = [
-        {
-            highE: [...Key(0, 3, 'e')],
-            B: [...Key(0, 3, 'B')],
-            G: [...Key(0, 2, 'G')],
-            D: [...Key(0, 2, 'D')],
-            A: [...Key(0, 2, 'A')],
-            E: [...Key(0, 3, 'E')],
-        },
-        {
-            highE: [...Key(3, 5, 'e')],
-            B: [...Key(3, 5, 'B')],
-            G: [...Key(2, 4, 'G')],
-            D: [...Key(2, 5, 'D')],
-            A: [...Key(2, 5, 'A')],
-            E: [...Key(3, 5, 'E')],
-        },
-        {
-            highE: [...Key(5, 7, 'e')],
-            B: [...Key(5, 8, 'B')],
-            G: [...Key(4, 7, 'G')],
-            D: [...Key(5, 7, 'D')],
-            A: [...Key(5, 7, 'A')],
-            E: [...Key(5, 7, 'E')],
-        },
-        {
-            highE: [...Key(7, 10, 'e')],
-            B: [...Key(8, 10, 'B')],
-            G: [...Key(7, 9, 'G')],
-            D: [...Key(7, 9, 'D')],
-            A: [...Key(7, 10, 'A')],
-            E: [...Key(7, 10, 'E')],
-        },
-        {
-            highE: [...Key(10, 12, 'e')],
-            B: [...Key(10, 12, 'B')],
-            G: [...Key(9, 12, 'G')],
-            D: [...Key(9, 12, 'D')],
-            A: [...Key(10, 12, 'A')],
-            E: [...Key(10, 12, 'E')],
-        }
-    ]
+    // new Data Object
+    const frets = {
+
+        highE: [
+            [0, 3, 'e'], [3, 5, 'e'], [5, 7, 'e'], [7, 10, 'e'], [10, 12, 'e']
+        ],
+        B: [
+            [0, 3, 'B'], [3, 5, 'B'], [5, 8, 'B'], [8, 10, 'B'], [10, 12, 'B'],
+        ],
+        G: [
+            [0, 2, 'G'], [2, 4, 'G'], [4, 7, 'G'], [7, 9, 'G'], [9, 12, 'G'],
+        ], 
+        D: [
+            [0, 2, 'D'], [2, 5, 'D'], [5, 7, 'D'], [7, 9, 'D'], [9, 12, 'D'],
+        ],
+        A: [
+            [0, 2, 'A'], [2, 5, 'A'], [5, 7, 'A'], [7, 10, 'A'], [10, 12, 'A'],
+        ],
+        E: [
+            [0, 3, 'E'], [3, 5, 'E'], [5, 7, 'E'], [7, 10, 'E'], [10, 12, 'E'],
+        ]
+    }
 
     const chooseSection = (section) => {
-
-        const newPentatonic = {
-            highE: [...new Set([...fret[0].highE, ...fret[1].highE, ...fret[2].highE, ...fret[3].highE, ...fret[4].highE])],
-            B: [...new Set([...fret[0].B, ...fret[1].B, ...fret[2].B, ...fret[3].B, ...fret[4].B])],
-            G: [...new Set([...fret[0].G, ...fret[1].G, ...fret[2].G, ...fret[3].G, ...fret[4].G])],
-            D: [...new Set([...fret[0].D, ...fret[1].D, ...fret[2].D, ...fret[3].D, ...fret[4].D])],
-            A: [...new Set([...fret[0].A, ...fret[1].A, ...fret[2].A, ...fret[3].A, ...fret[4].A])],
-            E: [...new Set([...fret[0].E, ...fret[1].E, ...fret[2].E, ...fret[3].E, ...fret[4].E])],
+        const showSection = {
+            highE: Key(...frets.highE[0 === section ? 0 : section -1]),
+            B: Key(...frets.B[0 === section ? 0 : section -1]),
+            G: Key(...frets.G[0 === section ? 0 : section -1]),
+            D: Key(...frets.D[0 === section ? 0 : section -1]),
+            A: Key(...frets.A[0 === section ? 0 : section -1]),
+            E: Key(...frets.E[0 === section ? 0 : section -1])
         }
 
-        return 0 === section ? newPentatonic : fret[section - 1]
+        function showAll() {
+            let strings = { 
+                highE: [], B: [], G: [], D: [], A: [], E: []
+            }
+            // replace this with Oject.entries later
+            frets.highE.map((arr) => strings.highE.push(...Key(...arr)))
+            frets.B.map((arr) => strings.B.push(...Key(...arr)))
+            frets.G.map((arr) => strings.G.push(...Key(...arr)))
+            frets.D.map((arr) => strings.D.push(...Key(...arr)))
+            frets.A.map((arr) => strings.A.push(...Key(...arr)))
+            frets.E.map((arr) => strings.E.push(...Key(...arr)))
+
+            let uniqueFrets = {
+                highE: [...new Set(strings.highE)], 
+                B: [...new Set(strings.B)], 
+                G: [...new Set(strings.G)], 
+                D: [...new Set(strings.D)], 
+                A: [...new Set(strings.A)], 
+                E: [...new Set(strings.E)]
+            }
+
+            return uniqueFrets
+        }
+        return 0 === section ? showAll() : showSection
     }
+    console.log(chooseSection(section))
 
     const [scale, setScale] = useState(chooseSection(section))
 
@@ -87,6 +91,8 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     useEffect(() => {
         setScale(chooseSection(section))
     }, [section])
+
+    // Xarrows Data (arrows and lines)
 
     return ([scale, value])
 }
