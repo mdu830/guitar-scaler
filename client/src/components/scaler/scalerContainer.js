@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import ScalerGrid from './scalerGrid';
 import usePentatonic from './scales/pentatonic/hooks/usePentatonic';
 import marks from './scales/pentatonic/mark';
-import { Slider, Box, Switch } from '@mui/material';
+import { Slider, Box, Switch, FormControlLabel } from '@mui/material';
 
-function valueLabelFormat(value) {
+function valueLabelKey(value) {
     return `key of ${marks[value]}`;
 }
 
@@ -49,26 +49,72 @@ export default function GuitarScaler() {
                 <ScalerGrid data={scaleHook} />
             </div>
             <div className="controlBar" color="dark">
-                <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
+                <Box sx={{ width: 'auto', paddingLeft: '4%', paddingRight: '4%' }}>
                     <Slider
                         value={sliderValue}
                         min={0}
                         step={1}
                         max={11}
-                        getAriaValueText={valueLabelFormat}
-                        valueLabelFormat={valueLabelFormat}
+                        getAriaValueText={valueLabelKey}
+                        valueLabelFormat={valueLabelKey}
                         onChange={handleSliderChange}
                         onChangeCommitted={() => setHookData({ sliderValue, sectionNum })}
                         valueLabelDisplay="auto"
                         aria-labelledby="non-linear-slider"
                     />
                 </Box>
-                <Box sx={{ width: 'auto', paddingLeft: '35px', paddingRight: '35px' }}>
-                    <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
-                    <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
-                    <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
-                    <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
-                    <Switch id='five' value={5} checked={checked.five} onChange={handleSection} />
+
+                <Box sx={{ width: 'auto', paddingLeft: '4%', paddingRight: '4%' }}>
+
+                    <FormControlLabel label="Section 1" labelPlacement="bottom"
+                        control={
+                            <Switch
+                                id='one'
+                                value={1}
+                                checked={checked.one}
+                                onChange={handleSection}
+                            />}
+                    />
+
+                    <FormControlLabel label="Section 2" labelPlacement="bottom"
+                        control={
+                            <Switch
+                                id='two'
+                                value={2}
+                                checked={checked.two}
+                                onChange={handleSection}
+                            />}
+                    />
+
+                    <FormControlLabel label="Section 3" labelPlacement="bottom"
+                        control={
+                            <Switch
+                                id='three'
+                                value={3}
+                                checked={checked.three}
+                                onChange={handleSection}
+                            />}
+                    />
+
+                    <FormControlLabel label="Section 4" labelPlacement="bottom"
+                        control={
+                            <Switch
+                                id='four'
+                                value={4}
+                                checked={checked.four}
+                                onChange={handleSection}
+                            />}
+                    />
+
+                    <FormControlLabel label="Section 5" labelPlacement="bottom"
+                        control={
+                            <Switch
+                                id='five'
+                                value={5}
+                                checked={checked.five}
+                                onChange={handleSection}
+                            />}
+                    />
                 </Box>
             </div>
         </div >

@@ -3,7 +3,6 @@
 }
 
 #scaler {
-    /* background-attachment: fixed; */
     background-size: 100% 89%;
     background-repeat: no-repeat;
     background-image: url('../../assets/images/fretboardRighty.jpg');
@@ -34,4 +33,10 @@
     height: 30vh;
     padding: 1em;
     background: linear-gradient(0deg, #1f1f1f 0%, #2c2c2c 100%)
+}
+
+.switch {
+    margin-left: 11%;
+    margin-right: auto;
+
 }
