@@ -7,13 +7,9 @@ import Dot from '../scales/elements/dots/Dot'
 export default function B(scaleData) {
 
     const data = gridData.B
-
     const dots = scaleData.data[0]
-    const arrows = scaleData.data[1]
-    // console.log(frets)
 
     return (
-
         <div>
             {/* B String */}
             <Grid container id="B" >

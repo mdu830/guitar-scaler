@@ -7,13 +7,10 @@ import Dot from '../scales/elements/dots/Dot'
 export default function HighE(scaleData) {
 
     const data = gridData.highE
-
     const dots = scaleData.data[0]
 
     return (
-
         <div>
-
             {/* High e String */}
             <Grid container id="highE" >
                 {data.map((fret, index) =>

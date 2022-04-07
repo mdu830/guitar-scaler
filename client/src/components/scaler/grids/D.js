@@ -8,11 +8,8 @@ export default function D(scaleData) {
 
     const data = gridData.D
     const dots = scaleData.data[0]
-    const arrows = scaleData.data[1]
-    // console.log(frets)
 
     return (
-
         <div>
             {/* D String */}
             <Grid container id="D" >

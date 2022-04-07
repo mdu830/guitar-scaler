@@ -8,10 +8,8 @@ export default function G(scaleData) {
 
     const data = gridData.G
     const dots = scaleData.data[0]
-    // console.log(frets)
 
     return (
-
         <div>
             {/* G String giggity */}
             <Grid container id="G" >
