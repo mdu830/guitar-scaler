@@ -64,56 +64,51 @@ export default function GuitarScaler() {
                     />
                 </Box>
 
-                <Box sx={{ width: 'auto', paddingLeft: '4%', paddingRight: '4%' }}>
+                <Box >
 
-                    <FormControlLabel label="Section 1" labelPlacement="bottom"
+                    <FormControlLabel
+                        sx={{ marginLeft: '10.5%' }}
+                        label="Section 1"
+                        labelPlacement="bottom"
                         control={
-                            <Switch
-                                id='one'
-                                value={1}
-                                checked={checked.one}
-                                onChange={handleSection}
-                            />}
+                            <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
+                        }
                     />
 
-                    <FormControlLabel label="Section 2" labelPlacement="bottom"
+                    <FormControlLabel
+                        sx={{ marginLeft: '10.5%' }}
+                        label="Section 2"
+                        labelPlacement="bottom"
                         control={
-                            <Switch
-                                id='two'
-                                value={2}
-                                checked={checked.two}
-                                onChange={handleSection}
-                            />}
+                            <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
+                        }
                     />
 
-                    <FormControlLabel label="Section 3" labelPlacement="bottom"
+                    <FormControlLabel
+                        sx={{ marginLeft: '10.5%' }}
+                        label="Section 3"
+                        labelPlacement="bottom"
                         control={
-                            <Switch
-                                id='three'
-                                value={3}
-                                checked={checked.three}
-                                onChange={handleSection}
-                            />}
+                            <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
+                        }
                     />
 
-                    <FormControlLabel label="Section 4" labelPlacement="bottom"
+                    <FormControlLabel
+                        sx={{ marginLeft: '10.5%' }}
+                        label="Section 4"
+                        labelPlacement="bottom"
                         control={
-                            <Switch
-                                id='four'
-                                value={4}
-                                checked={checked.four}
-                                onChange={handleSection}
-                            />}
+                            <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
+                        }
                     />
 
-                    <FormControlLabel label="Section 5" labelPlacement="bottom"
+                    <FormControlLabel
+                        sx={{ marginLeft: '10.5%' }}
+                        label="Section 5"
+                        labelPlacement="bottom"
                         control={
-                            <Switch
-                                id='five'
-                                value={5}
-                                checked={checked.five}
-                                onChange={handleSection}
-                            />}
+                            <Switch id='five' value={5} checked={checked.five} onChange={handleSection} />
+                        }
                     />
                 </Box>
             </div>
