@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 
 const usePentatonic = ({ sliderValue, sectionNum }) => {
@@ -76,15 +77,6 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
             E: [...new Set([...fret[0].E, ...fret[1].E, ...fret[2].E, ...fret[3].E, ...fret[4].E])],
         }
 
-        // function setAll(string) {
-        //     let arr = []
-            
-        //     fret.map((section) => arr.push(...section.highE))
-            
-        //     return new Set(arr)
-        // }
-        // console.log(setAll('highE'))
-
         return 0 === section ? newPentatonic : fret[section - 1]
     }
 
@@ -97,8 +89,6 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     useEffect(() => {
         setScale(chooseSection(section))
     }, [section])
-
-    // console.log(scale)
 
     return ([scale, value])
 }
