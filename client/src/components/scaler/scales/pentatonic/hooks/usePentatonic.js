@@ -100,7 +100,7 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
 
     // console.log(scale)
 
-    return (scale)
+    return ([scale, value])
 }
 
 export default usePentatonic;

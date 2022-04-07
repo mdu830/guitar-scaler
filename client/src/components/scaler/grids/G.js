@@ -8,7 +8,6 @@ export default function G(scaleData) {
 
     const data = gridData.G
     const dots = scaleData.data[0]
-    const arrows = scaleData.data[1]
     // console.log(frets)
 
     return (
@@ -27,7 +26,7 @@ export default function G(scaleData) {
                             && dots[5] !== fret.id 
                             && dots[6] !== fret.id
                             ? <div key={index} className='dot' /> 
-                            : <Dot key={index} id ={fret.id} data={'slider value?'}/>
+                            : <Dot key={index} id ={fret.id} data={scaleData.data[1]}/>
                         }
                     </div>
                 )}

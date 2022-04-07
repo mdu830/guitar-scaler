@@ -36,13 +36,11 @@ export default function GuitarScaler() {
 
     // custom hook(s) 
     const [hookData, setHookData] = useState({ sliderValue, sectionNum })
-
     const scaleHook = usePentatonic(hookData)
 
     useEffect(() => {
         setHookData({ sliderValue, sectionNum })
     }, [sectionNum])
-
 
     return (
         <div id="application">

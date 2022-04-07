@@ -28,7 +28,7 @@ export default function B(scaleData) {
                                 && dots[5] !== fret.id
                                 && dots[6] !== fret.id
                                 ? <div key={index} className='dot' />
-                                : <Dot key={index} id ={fret.id} data={'slider value?'}/>
+                                : <Dot key={index} id ={fret.id} data={scaleData.data[1]}/>
                         }
                     </div>
                 )}
