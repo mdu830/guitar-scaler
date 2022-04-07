@@ -11,7 +11,6 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
     }
 
     const Key = (x, y, string) => {
-
         let arr = []
 
         addNewValue([x, y]).map((value) => 

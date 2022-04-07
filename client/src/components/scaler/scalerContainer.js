@@ -36,6 +36,7 @@ export default function GuitarScaler() {
 
     // custom hook(s) 
     const [hookData, setHookData] = useState({ sliderValue, sectionNum })
+
     const scaleHook = usePentatonic(hookData)
 
     useEffect(() => {
@@ -63,47 +64,41 @@ export default function GuitarScaler() {
                         aria-labelledby="non-linear-slider"
                     />
                 </Box>
-
                 <Box >
-
                     <FormControlLabel
-                        sx={{ marginLeft: '10.5%' }}
+                        sx={{ marginLeft: '10%' }}
                         label="Section 1"
                         labelPlacement="bottom"
                         control={
                             <Switch id='one' value={1} checked={checked.one} onChange={handleSection} />
                         }
                     />
-
                     <FormControlLabel
-                        sx={{ marginLeft: '10.5%' }}
+                        sx={{ marginLeft: '10%' }}
                         label="Section 2"
                         labelPlacement="bottom"
                         control={
                             <Switch id='two' value={2} checked={checked.two} onChange={handleSection} />
                         }
                     />
-
                     <FormControlLabel
-                        sx={{ marginLeft: '10.5%' }}
+                        sx={{ marginLeft: '10%' }}
                         label="Section 3"
                         labelPlacement="bottom"
                         control={
                             <Switch id='three' value={3} checked={checked.three} onChange={handleSection} />
                         }
                     />
-
                     <FormControlLabel
-                        sx={{ marginLeft: '10.5%' }}
+                        sx={{ marginLeft: '10%' }}
                         label="Section 4"
                         labelPlacement="bottom"
                         control={
                             <Switch id='four' value={4} checked={checked.four} onChange={handleSection} />
                         }
                     />
-
                     <FormControlLabel
-                        sx={{ marginLeft: '10.5%' }}
+                        sx={{ marginLeft: '10%' }}
                         label="Section 5"
                         labelPlacement="bottom"
                         control={
