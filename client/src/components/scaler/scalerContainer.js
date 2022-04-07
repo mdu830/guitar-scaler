@@ -1,17 +1,17 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import './style.css'
 import { useEffect, useState } from 'react';
-import ScalerGrid from './scalerGrid';
+import { Slider, Box, Switch, FormControlLabel } from '@mui/material';
 import usePentatonic from './scales/pentatonic/hooks/usePentatonic';
 import marks from './scales/pentatonic/mark';
-import { Slider, Box, Switch, FormControlLabel } from '@mui/material';
-
-function valueLabelKey(value) {
-    return `key of ${marks[value]}`;
-}
+import ScalerGrid from './scalerGrid';
 
 export default function GuitarScaler() {
 
+    // slider Labels
+    function valueLabelKey(value) {
+        return `key of ${marks[value]}`;
+    }
     // slider values
     const [sliderValue, setSliderValue] = useState(0)
 
@@ -19,7 +19,6 @@ export default function GuitarScaler() {
     const handleSliderChange = (event, newValue) => {
         if (typeof newValue === 'number') {
             setSliderValue(newValue);
-
         }
     };
 

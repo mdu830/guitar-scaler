@@ -66,8 +66,6 @@ const usePentatonic = ({ sliderValue, sectionNum }) => {
 
     const chooseSection = (section) => {
 
-
-
         const newPentatonic = {
             highE: [...new Set([...fret[0].highE, ...fret[1].highE, ...fret[2].highE, ...fret[3].highE, ...fret[4].highE])],
             B: [...new Set([...fret[0].B, ...fret[1].B, ...fret[2].B, ...fret[3].B, ...fret[4].B])],
