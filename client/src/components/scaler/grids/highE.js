@@ -9,8 +9,6 @@ export default function HighE(scaleData) {
     const data = gridData.highE
 
     const dots = scaleData.data[0]
-    // const arrows = scaleData.data[1]
-    // console.log(scaleData)
 
     return (
 
@@ -29,7 +27,7 @@ export default function HighE(scaleData) {
                             && dots[5] !== fret.id 
                             && dots[6] !== fret.id
                             ? <div key={index} className='dot' /> 
-                            : <Dot key={index} data={fret.id}/>
+                            : <Dot key={index} id ={fret.id} data={'slider value?'}/>
                         }
                     </div>
                 )}
