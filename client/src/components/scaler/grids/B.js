@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import '../style.css'
+import './style.css'
 import Grid from '@mui/material/Grid'
 import gridData from './data/gridData'
 import Dot from '../scales/elements/dots/Dot'

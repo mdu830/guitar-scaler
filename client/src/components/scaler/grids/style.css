@@ -1,0 +1,83 @@
+#highE {
+    padding-top: 11px;
+}
+
+#B {
+    padding-top: 6px;
+}
+
+#G, #A {
+    padding-top: 7px;
+}
+
+#D {
+    padding-top: 9px;
+}
+
+#E {
+    padding-top: 5px;
+}
+
+#highE, #B, #G, #D, #A, #E {
+    margin-left: 1%;
+    width: auto;
+}
+
+.fret0, .fret1, .fret2, .fret3, .fret4, .fret5, .fret6, 
+.fret7, .fret8, .fret9, .fret10, .fret11, .fret12 {
+    border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.fret0 {
+    margin-left: 1.6%;
+    width: 1.3%;
+    padding-left: 0%;
+}
+
+.fret1 {
+    width: 7.202%;
+}
+
+.fret2 {
+    width: 7%;
+}
+
+.fret3 {
+    width: 6.837%;
+}
+
+.fret4 {
+    width: 6.9%;
+}
+
+.fret5 {
+    width: 6%;
+}
+
+.fret6 {
+    width: 6.2%;
+}
+
+.fret7 {
+    width: 5%;
+}
+
+.fret8 {
+    width: 5.8%;
+}
+
+.fret9 {
+    width: 4.5%;
+}
+
+.fret10 {
+    width: 5.3%;
+}
+
+.fret11 {
+    width: 3.7%;
+}
+
+.fret12 {
+    width: 4.6%;
+}
