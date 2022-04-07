@@ -31,7 +31,7 @@ export default function GuitarScaler() {
     // switch function(s)
     const handleSection = (event) => {
         setChecked({ ...defaultChecks, [event.target.id]: event.target.checked })
-        return event.target.checked ? setSectionNum(event.target.value) && setHookData({ sliderValue, sectionNum }) : setSectionNum(0)
+        return event.target.checked ? setSectionNum(event.target.value) : setSectionNum(0)
     }
 
     // custom hook(s) 
