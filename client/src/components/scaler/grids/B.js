@@ -8,6 +8,7 @@ export default function B(scaleData) {
 
     const data = gridData.B
     const dots = scaleData.data[0]
+    // testing git on macbook
 
     return (
         <div>
